@@ -1,0 +1,364 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'REM', sans-serif;
+    color: #212529;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+ul {
+    padding-left: 0 !important;
+}
+
+li {
+    list-style: none;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* *Transvesal */
+
+.container-go4it {
+    margin-right: 4rem;
+    margin-left: 4rem;
+
+
+    /* max-width: 1200px; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* padding: 0px 24px; */
+    /* align-items: inherit;
+    flex-direction: inherit;
+    justify-content: inherit; */
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+
+.gradient-fill {
+    animation: gradient-fill 7s linear infinite;
+    transform: translateZ(0);
+    background-size: 200% 200%;
+    /* background-image: radial-gradient(circle at 100% 60%, var(--color-2), var(--darker-3), var(--lighter-1), #ecedef 165%, #f0eff0 165%); */
+    /* background-image: radial-gradient(circle at 100% 60%, #fc5e9b, #735adb 73%, #3f90e5 88%, #ecedef 165%, #f0eff0 165%); */
+    background-image: var(--radial-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+
+@-moz-keyframes gradient-fill {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes gradient-fill {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.btn-go4it {
+    padding: 6px 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 3px;
+
+    border: none;
+    color: #fff;
+    background-color: rgb(88, 101, 242);
+    transition: background-color .17s ease, color .17s ease;
+}
+
+.btn-go4it:hover {
+    transition: .5s all ease;
+    background-color: rgb(71, 82, 196);
+    border-radius: 1px;
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.btn-go4it:active {
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+
+.btn-escuela-go4it {
+    padding: 4px 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 3px;
+    width: 100%;
+
+    color: #fff;
+    /* border:1px solid var(--morado-gradiant); */
+    border-radius: 5px;
+    background-color: var(--primario-color-celeste);
+
+
+}
+
+.btn-escuela-go4it:hover {
+    transition: .5s all ease;
+    color: #ffffff;
+    background-color: var(--darker-primario-color-celeste);
+    /* border: none; */
+}
+
+
+
+
+
+
+
+.txt-go4it-h2 {
+    font-weight: 500;
+    line-height: 52px;
+    font-size: 32px;
+    padding: 1rem 0;
+
+}
+
+.text-left-go4it {
+    text-align: left;
+}
+
+.text-left-go4it img {
+    padding-right: .5rem;
+}
+
+.contenedor-seccion-go4it {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-descarga-go4it {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-descarga-go4it h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+
+.titulo-descarga-go4it div {
+    display: flex;
+    color: #000000;
+    background: var(--primario-color-amarillo);
+    gap: 8px;
+    padding: 4px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.titulo-descarga-go4it div:hover {
+    background: var(--lighter-primario-color-amarillo);
+}
+
+.titulo-descarga-go4it a {
+    color: #000000;
+    font-size: 14px;
+}
+
+
+
+
+/* ?Banner */
+.section-banner-go4it {
+    /* padding-top: 5.5rem; */
+    display: flex;
+    /* padding-bottom: 72px; */
+    padding: 2rem 0;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* background: var(--color-4-opacity-1); */
+}
+
+.contenedor-principal-go4it {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    padding: 0px 24px;
+    align-items: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+}
+
+.svg-banner-izquierda {
+    display: block;
+    top: 0;
+    left: -1px;
+    height: 100%;
+    position: absolute;
+}
+
+.svg-banner-derecha {
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    position: absolute;
+    max-width: 80%;
+}
+
+.contenedor-banner-go4it {
+    width: 100%;
+    display: flex;
+    /* margin-top: 48px;
+    margin-bottom: 48px; */
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 6rem;
+}
+
+.img-banner {
+    max-width: 100%;
+    /* max-height: 400px; */
+    /* clip-path: polygon(10% 0, 100% 0, 92% 100%, 0 100%) */
+}
+
+.contenedor-texto-go4it h1 {
+    font-weight: 600;
+    line-height: 52px;
+    font-size: 48px;
+}
+
+.contenedor-texto-go4it p {
+    font-size: 18px;
+}
+
+.nosotros-go4it {
+    background: var(--color-3-opacity-1);
+}
+
+
+/* ? porque irlanda */
+
+.section-porque-go4it {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.imagenes-porque-go4it {
+    flex-basis: 50%;
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 1fr;  */
+    gap: 10px;
+}
+
+.texto-porque-go4it {
+    flex-basis: 50%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-grande {
+    width: 50%;
+    text-align: left;
+}
+
+.imagenes-porque-go4it .img-small {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .container-go4it {
+        max-width: 100%;
+    }
+}
+
+/* *FORM INFO*/
+
+.formInfo {
+    max-width: fit-content;
+    width: 700px !important;
+    margin: 30px;
+    padding: 50px 60px 50px 60px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.formInfo .btn {
+    width: 250px !important;
+    font-weight: 600;
+    color: white;
+    border: 1px solid var(--second-color) !important;
+    background-color: var(--main-color) !important;
+}
+
+.infoContacto {
+    text-align: center;
+    padding: 0;
+}

@@ -1,0 +1,199 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* ? Menu hamburguesa */
+
+.hamburger-menu {
+  display: none;
+}
+
+.main-nav .logo {
+  cursor: pointer;
+  margin-right: auto;
+
+}
+
+.user-block {
+  margin: 0 10px;
+  order: -1;
+}
+
+.user-block__logo {
+  width: 100px;
+  display: block;
+}
+
+
+
+/* *Nav */
+.header-go4it {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  /* border-bottom: 1px solid var(--main-color); */
+  box-shadow: 0px 1px 5px #888888;
+  background: #fff;
+
+}
+
+.menu-nav .menu-nav__item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.main-nav__link {
+  color: #000;
+  /* font-weight: 500; */
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 18px;
+}
+
+
+
+#cursosIngles:focus,
+#irlanda:focus,
+#australia:focus,
+#malta:focus,
+#nuevaZelanda:focus {
+  background: rgb(236 250 255 / 68%)
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+
+
+/* * Submenu Paises */
+/* Estilos para el menú principal */
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.main-menu-item {
+  position: relative;
+}
+
+.main-menu-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Estilos para los submenús */
+.sub-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+}
+
+.main-menu-item:hover > .sub-menu {
+  display: block;
+  padding: 6px 24px !important;
+}
+
+.sub-menu-item {
+  position: relative;
+}
+
+.sub-menu-link {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos para los submenús secundarios */
+.sub-sub-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+}
+
+.sub-menu-item:hover > .sub-sub-menu {
+  display: block;
+  padding: 6px 24px !important;
+
+}
+
+/* 
+.main-menu-link img {
+  margin-left: 5px; 
+}
+
+.sub-menu-item img{
+  margin-left: 5px;
+} */
+
+.link-ciudades a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: 6px 0;
+    transition: 0.5s;
+    border-radius: 2px;
+
+  }
+
+  /* Estilos para animar el menú hamburguesa */
+  .hamburger-menu.active .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

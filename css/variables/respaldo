@@ -1,0 +1,66 @@
+:root {
+    --main-color: rgba(16, 137, 176, 1);
+    --second-color: rgba(139, 189, 231, 1);
+    --third-color: rgba(48, 80, 127, 1);
+    --cuarto-color: rgba(255, 211, 1, 1);
+    --quinto-color: rgb(143 41 149);
+
+    --verde-gradiant: rgba(43, 214, 103, 1);
+
+    --rosado-gradiant: #fc5e9b;
+
+    --morado-gradiant: #735adb;
+
+    --azul-gradiant: #3f90e5 88%;
+
+    /* Colores principales */
+    --color-1: rgba(16, 137, 176, 1);
+    --color-2: rgba(48, 80, 127, 1);
+    --color-3: rgba(43, 214, 103, 1);
+    --color-4: rgba(139, 189, 231, 1);
+    --color-5: rgba(146, 106, 217, 1);
+
+    /* Nuevos colores con diferentes opacidades */
+    --color-1-opacity-1: rgba(16, 137, 176, 0.1);
+    --color-1-opacity-2: rgba(16, 137, 176, 0.2);
+    --color-1-opacity-3: rgba(16, 137, 176, 0.3);
+
+    --color-2-opacity-1: rgba(48, 80, 127, 0.1);
+    --color-2-opacity-2: rgba(48, 80, 127, 0.2);
+    --color-2-opacity-3: rgba(48, 80, 127, 0.3);
+
+    --color-3-opacity-1: rgba(43, 214, 103, 0.1);
+    --color-3-opacity-2: rgba(43, 214, 103, 0.2);
+    --color-3-opacity-3: rgba(43, 214, 103, 0.3);
+
+    --color-4-opacity-1: rgba(139, 189, 231, 0.1);
+    --color-4-opacity-2: rgba(139, 189, 231, 0.2);
+    --color-4-opacity-3: rgba(139, 189, 231, 0.3);
+
+    --color-5-opacity-1: rgba(146, 106, 217, 0.1);
+    --color-5-opacity-2: rgba(146, 106, 217, 0.2);
+    --color-5-opacity-3: rgba(146, 106, 217, 0.3);
+
+    /* Tonalidades más claras */
+    --lighter-1: rgba(110, 178, 201, 1);
+    --lighter-2: rgba(152, 167, 189, 1);
+    --lighter-3: rgba(168, 232, 188, 1);
+    --lighter-4: rgba(191, 211, 230, 1);
+    --lighter-5: rgba(196, 168, 231, 1);
+
+    /* Tonalidades más oscuras */
+    --darker-1: rgba(9, 71, 90, 1);
+    --darker-2: rgba(32, 54, 86, 1);
+    --darker-3: rgba(30, 153, 73, 1);
+    --darker-4: rgba(92, 126, 154, 1);
+    --darker-5: rgba(107, 79, 164, 1);
+
+    /* Degradados */
+    --gradient-1: linear-gradient(135deg, var(--color-1), var(--color-2));
+    --gradient-2: linear-gradient(45deg, var(--color-2), var(--color-3));
+    --gradient-3: linear-gradient(90deg, var(--color-1), var(--color-3));
+    --gradient-4: linear-gradient(180deg, var(--color-3), var(--color-4));
+    --gradient-5: linear-gradient(270deg, var(--color-4), var(--color-5));
+
+    --radial-gradient: radial-gradient(circle at 100% 60%, var(--color-3), var(--color-5) 73%, var(--color-1) 88%, var(--lighter-5) 165%, var(--lighter-3) 165%);
+}

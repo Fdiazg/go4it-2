@@ -1,0 +1,63 @@
+:root {
+    /* Colores primarios */
+    --primario-color-celeste: rgba(16, 137, 176, 1);
+    --primario-color-celeste-claro: rgba(139, 189, 231, 1);
+    --primario-color-celeste-oscuro: rgba(48, 80, 127, 1);
+    --primario-color-amarillo: rgba(255, 211, 1, 1);
+    --primario-color-morado: rgba(146, 106, 217, 1);
+    --primario-color-verde: rgba(43, 214, 103, 1);
+
+    /* Tonalidades menos claras */
+    --lighter-primario-color-celeste: rgb(40, 140, 176);
+    --lighter-primario-color-celeste-claro: rgb(126, 176, 215);
+    --lighter-primario-color-celeste-oscuro: rgba(68, 100, 134, 1);
+    --lighter-primario-color-amarillo: rgb(248, 218, 21);
+    --lighter-primario-color-morado: rgba(166, 131, 207, 1);
+    --lighter-primario-color-verde: rgb(71, 200, 90);
+
+    /* Tonalidades menos oscuras */
+    --darker-primario-color-celeste: rgb(16, 121, 153);
+    --darker-primario-color-celeste-claro: rgb(59, 106, 142);
+    --darker-primario-color-celeste-oscuro: rgb(36, 64, 104);
+    --darker-primario-color-amarillo: rgb(241, 199, 11);
+    --darker-primario-color-morado: rgba(81, 51, 130, 1);
+    --darker-primario-color-verde: rgb(30, 154, 71);
+
+    /* Variantes de opacidad */
+    --primario-color-celeste-opacity-2: rgba(16, 137, 176, 0.2);
+    --primario-color-celeste-opacity-3: rgba(16, 137, 176, 0.3);
+    --primario-color-celeste-opacity-4: rgba(16, 137, 176, 0.4);
+
+    --primario-color-celeste-claro-opacity-2: rgba(139, 189, 231, 0.2);
+    --primario-color-celeste-claro-opacity-3: rgba(139, 189, 231, 0.3);
+    --primario-color-celeste-claro-opacity-4: rgba(139, 189, 231, 0.4);
+
+    --primario-color-celeste-oscuro-opacity-2: rgba(48, 80, 127, 0.2);
+    --primario-color-celeste-oscuro-opacity-3: rgba(48, 80, 127, 0.3);
+    --primario-color-celeste-oscuro-opacity-4: rgba(48, 80, 127, 0.4);
+
+    --primario-color-amarillo-opacity-2: rgba(255, 211, 11, 0.2);
+    --primario-color-amarillo-opacity-3: rgba(255, 211, 11, 0.3);
+    --primario-color-amarillo-opacity-4: rgba(255, 211, 11, 0.4);
+
+    --primario-color-morado-opacity-2: rgba(146, 106, 217, 0.2);
+    --primario-color-morado-opacity-3: rgba(146, 106, 217, 0.3);
+    --primario-color-morado-opacity-4: rgba(146, 106, 217, 0.4);
+
+    --primario-color-verde-opacity-2: rgba(43, 214, 103, 0.2);
+    --primario-color-verde-opacity-3: rgba(43, 214, 103, 0.3);
+    --primario-color-verde-opacity-4: rgba(43, 214, 103, 0.4);
+
+    /* Degradados */
+    --gradiente-celeste-amarillo: linear-gradient(45deg, var(--primario-color-celeste), var(--primario-color-amarillo));
+    --gradiente-amarillo-morado: linear-gradient(45deg, var(--primario-color-amarillo), var(--primario-color-morado));
+    --gradiente-celeste-morado: linear-gradient(90deg, var(--primario-color-celeste), var(--primario-color-morado));
+    --gradiente-verde-celeste-claro: linear-gradient(135deg, var(--primario-color-verde), var(--primario-color-celeste-claro));
+    --gradiente-morado-verde: linear-gradient(180deg, var(--primario-color-morado), var(--primario-color-verde));
+
+
+    /* Radial gradient */
+    --radial-gradient: radial-gradient(circle at 100% 60%, var(--primario-color-verde), var(--primario-color-morado) 73%, var(--primario-color-celeste) 88%, var(--lighter-primario-color-morado) 165%, var(--lighter-primario-color-verde) 165%);
+
+    --radial-gradient-celeste-verde: radial-gradient(circle at 100% 60%, var(--primario-color-celeste), var(--primario-color-verde));
+}

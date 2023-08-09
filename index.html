@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go4it!</title>
+    <!-- <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css"> -->
+    <link rel="shortcut icon" href="img/Logo2.ico">
+    <link rel="stylesheet" href="./css/variables/colores.css">
+    <link rel="stylesheet" href="./css/variables/transiciones.css">
+    <link rel="stylesheet" href="./js/splide/splide.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/rrss.css">
+    <link rel="stylesheet" href="./css/escuelas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <header class="container-fluid-no header-go4it " id="inicio">
+        <div class="container-go4it">
+            <nav class="main-nav container-fluid-no  " id="navbar-fixed">
+                <div class="containerssssss" id="container-nav">
+                    <button type="button" class="open-menu" id="open-menu">
+                        <span class="open-menu__icon">
+                            <span class="open-menu__bar"></span>
+                        </span>
+                    </button>
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./img/logo Go 4 it original tipo.png" alt="Logo" class="user-block__logo">
+                        </a>
+
+                    </div>
+
+
+
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__link-activo activo"><a class="main-nav__link" href="#"
+                                data-destino="inicio">Inicio</a></li>
+
+
+                        <li class="main-nav__item main-nav__link-activo"><a class="main-nav__link" href="#"
+                                data-destino="nosotros">Nosotros</a></li>
+
+
+
+                        <li class="main-nav__item exclude-open" id="cursos">
+                            <a class="main-nav__link main-nav__link-activo" id="cursosIngles"
+                                data-destino="nuestrasEscuelas" href="#">Cursos de inglés
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="sub-nav__list open-paises__main">
+                                <li class="sub-nav__item ">
+                                    <a class="main-nav__link main-nav__link-activo open-paises" id="irlanda"
+                                        href="#">Irlanda
+                                        <i class="bi bi-arrow-down-short"></i></a>
+                                    <ul class="sub-nav__sublist open-paises__ciudades" id="irlandaCiudades">
+                                        <li class="sub-nav__subitem"><a class="main-nav__link"
+                                                href="./html/limerick.html">Limerick</a></li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Dublín</a>
+                                        </li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link"
+                                                href="./html/cork.html">Cork</a></li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link"
+                                                href="./html/drogheda.html">Drogheda</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a class="main-nav__link open-paises" id="malta" href="#">Malta
+                                        <i class="bi bi-arrow-down-short"></i>
+                                    </a>
+                                    <ul class="sub-nav__sublist open-paises__ciudades">
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Mosta
+                                            </a></li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Sanglea</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub-nav__item">
+                                    <a class="main-nav__link open-paises" id="australia" href="#">Australia
+                                        <i class="bi bi-arrow-down-short"></i>
+                                    </a>
+                                    <ul class="sub-nav__sublist open-paises__ciudades">
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Sidney</a></li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Meldbourne</a>
+                                        </li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Adelaida</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sub-nav__item">
+                                    <a class="main-nav__link open-paises" id="nuevaZelanda" href="#">Nueva Zelanda
+                                        <i class="bi bi-arrow-down-short"></i>
+                                    </a>
+                                    <ul class="sub-nav__sublist open-paises__ciudades">
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Auckland</a>
+                                        </li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Wellington</a>
+                                        </li>
+                                        <li class="sub-nav__subitem"><a class="main-nav__link" href="#">Queenstown</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link-activo" href="#"
+                                data-destino="workingHoliday">WH</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link-activo" href="#"
+                                data-destino="contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header> -->
+
+
+
+    <header class="container-fluid-no header-go4it " id="inicio">
+        <div class="container-go4it">
+            <div class="container-nav" id="container-nav">
+
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./img/logo Go 4 it original tipo.png" alt="Logo" class="user-block__logo">
+                    </a>
+
+                </div>
+
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+                <!--
+                <nav class="menu-nav" id="">
+
+                    <ul class="menu-nav__item">
+                        <li class=""><a class="main-nav__link" href="#" data-destino="inicio">Inicio</a></li>
+
+
+                        <li class=""><a class="main-nav__link" href="#" data-destino="nosotros">Nosotros</a></li>
+
+
+
+                        <li class="" id="cursos">
+                            <a class="main-nav__link" id="cursosIngles" data-destino="nuestrasEscuelas" href="#">Cursos
+                                de inglés
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            
+                             <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <div class="sub-menu-pais">
+                                        <a class="main-nav__link" id="irlanda" href="#">Irlanda </a>
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </div>
+                                    <ul class="sub-menu-ciudades" id="irlandaCiudades">
+                                        <li class=""><a class="main-nav__link" href="./html/limerick.html">Limerick</a>
+                                        </li>
+                                        <li class=""><a class="main-nav__link" href="#">Dublín</a>
+                                        </li>
+                                        <li class=""><a class="main-nav__link" href="./html/cork.html">Cork</a></li>
+                                        <li class=""><a class="main-nav__link" href="./html/drogheda.html">Drogheda</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul> 
+
+
+
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <div class="sub-menu-pais">
+                                        <a class="main-nav__link" id="irlanda" href="#">Irlanda</a>
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </div>
+                                    <ul class="sub-menu-ciudades" id="irlandaCiudades">
+                                        <li class=""><a class="main-nav__link" href="#" >Limerick</a>
+                                        </li>
+                                        <li class=""><a class="main-nav__link" href="#">Dublín</a></li>
+                                        <li class=""><a class="main-nav__link" href="#">Cork</a></li>
+                                        <li class=""><a class="main-nav__link" href="#">Drogheda</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+
+
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link-activo" href="#"
+                                data-destino="workingHoliday">WH</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link main-nav__link-activo" href="#"
+                                data-destino="contacto">Contacto</a></li>
+                    </ul>
+            </div>
+            </nav>
+            -->
+                <nav>
+                    <ul class="main-menu">
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">Inicio</a>
+                        </li>
+
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">Cursos de inglés
+                                <img src="./svg/arrow_bottom.svg" alt="">
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <a class="sub-menu-link" href="#">Irlanda
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </a>
+                                    <ul class="sub-sub-menu">
+                                        <li class="link-ciudades" data-destino="limerick"><a href="#sectionEscuelas">Limerick
+
+                                            </a></li>
+                                        <li class="link-ciudades" data-destino="dublin"><a href="#sectionEscuelas">Dublin
+
+                                            </a>
+                                        </li>
+                                        <li class="link-ciudades" data-destino="cork"><a href="#sectionEscuelas">Cork
+                                            </a></li>
+                                        <li class="link-ciudades" data-destino="drogheda"><a href="#sectionEscuelas">Drogheda
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a class="sub-menu-link" href="#">Australia
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </a>
+                                    <ul class="sub-sub-menu">
+                                        <li class="link-ciudades" data-destino="sidney">
+                                            <a href="#sectionEscuelas">Sidney</a>
+                                        </li>
+                                        <li class="link-ciudades" data-destino="adelaida">
+                                            <a href="#sectionEscuelas">Adelaida</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">WH</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ?RRSS* -->
+
+    <div class="social">
+        <a href="https://instagram.com">
+            <div class="social-btn color-instagram">
+                <i class="bi bi-instagram"></i>
+            </div>
+        </a>
+        <a href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!" target="_blank">
+            <div class="social-btn color-whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </a>
+        <a href="tel:+353894553685">
+            <div class="social-btn color-phone">
+                <i class="bi bi-telephone"></i>
+            </div>
+        </a>
+        <a href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+            <div class="social-btn color-correo">
+                <i class="bi bi-envelope"></i>
+            </div>
+        </a>
+    </div>
+
+
+
+
+
+
+
+    <main>
+
+        <section class="section-banner-go4it">
+            <div class="contenedor-principal-go4it container-go4it">
+                <div class="contenedor-banner-go4it">
+                    <div class="contenedor-texto-go4it">
+                        <h1>Estudia Inglés con Go4it! <span class="gradient-fill">y sube a la aventura</span> </h1>
+                        <p>¡Descubre la emoción de aprender inglés y desafía tus límites! Abre las puertas a nuevas
+                            oportunidades y conquista el mundo con confianza. <b>¡Atrévete a vivir la experiencia
+                                Go4it!</b></p>
+                    </div>
+                    <div>
+                        <a class="btn-go4it btn-principal" href="#">Contactanos!</a>
+                    </div>
+                </div>
+                <div class="contenedor-imgbanner-go4it">
+                    <div>
+                        <!-- <img class="svg-banner-izquierda" src="https://a.marketing.englishlive.ef.com/_assets/svgs/curveBoundaryLeft.svg" alt=""> -->
+                        <img class="img-banner" src="./img/banner-irlanda.jpg" alt="">
+                        <!-- <img class="svg-banner-derecha" src="https://a.marketing.englishlive.ef.com/_assets/svgs/curveBoundaryRight.svg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="nosotros-go4it  text-center">
+            <div class="containersssssss container-go4it contenedor-seccion-go4it">
+                <h2 class="txt-go4it-h2">¿Por qué Irlanda?
+                    <!-- <hr class="hrTitulos "> -->
+                </h2>
+                <div class="section-porque-go4it">
+                    <div class="imagenes-porque-go4it">
+                        <div class="img-grande">
+                            <img class="img-fluid" src="./img/irlanda_ciudad3.jpg" alt="" width="250px">
+                        </div>
+                        <div class="img-small">
+                            <img class="img-fluid" src="./img/irlanda_ciudad.png" alt="">
+                            <img class="img-fluid" src="./img/irlanda_ciudad2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id=" " class="texto-porque-go4it text-center ">
+                        <div class="nosotros-text text-left-go4it">
+                            <p>
+                                <img src="./svg/mundo.svg" alt="">
+                                Irlanda es uno de los países más multiculturales, amigables, seguros y estables
+                                económicamente dentro de la Unión Europea.
+                            </p>
+                            <p>
+                                <img src="./svg/ireland.svg" alt="">
+                                Conocida como la Isla esmeralda por sus innumerables tipos de verde, el aprender
+                                inglés
+                                puede no ser el único motivo para vivir en este país, ya que también destaca por sus
+                                numerosas tradiciones, paisajes, parques naturales y sus más de 3000 castillos al
+                                rededor de
+                                toda la Isla, la cual por su tamaño y conectividad es muy fácil de recorrer.
+                            </p>
+                            <p> <img src="./svg/clover.svg" alt="">
+                                Gracias a su amigable cultura, tendrás la oportunidad de poner a prueba tu inglés en
+                                todo
+                                momento ya que ellos no tienen miedo de iniciar una nueva conversación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div class="container">
+                <h3 class="text-center p-0 m-0">Limerick</h3>
+                <div class="splide__track contenedor-go4it">
+                    <ul class="splide__list ">
+                        <li class="splide__slide ">
+                            <div class="tarjetas-escuelas">
+                                <div class="escuelas ">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./img/rightWord.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text text-center">Rightword es una destacada y moderna
+                                                escuela de
+                                                inglés ubicada
+                                                en la calle The Crescent Street en el corazón de la vibrante ciudad de
+                                                Limerick, con una
+                                                distancia
+                                                caminable a las atraccións de la tercera ciudad más grande de Irlanda.
+                                            </p>
+                                            <a href="./html/rightWord.html"
+                                                class="btn text-center align-content-center d-grid">Conocer
+                                                más</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide ">
+                            <div class="tarjetas-escuelas">
+
+                                <div class="escuelas ">
+
+                                    <div class="card">
+                                        <img class="card-img-top" src="./img/studentCampus.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text text-center">Student campus es una escuela de ingles
+                                                ubicada
+                                                en el centro de
+                                                la ciudad de Limeric. Esta escuela se encuentra muy bien ubicada, justo
+                                                en
+                                                el corazón de la
+                                                ciudad,
+                                                rodeada de tiendas, restaurantes, principales paradas de bus y
+                                                supermercados.</p>
+                                            <a href="./html/studentCampus.html"
+                                                class="btn text-center align-content-center d-grid">Conocer
+                                                más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="tarjetas-escuelas">
+                                <div class="escuelas ">
+                                    <div class="card">
+                                        <img class="card-img-top" src="./img/cropped-English-Language-Institute.png"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <p class="card-text text-center">Fundada en 2017, ELI Schools es una empresa
+                                                líder en formación
+                                                del idioma inglés con tres escuelas abiertas durante todo el año en
+                                                Irlanda.
+                                                Nominada en 2001 por colegas y socios de la industria entre las mejores
+                                                nuevas escuelas de
+                                                inglés en Europa.
+                                            </p>
+                                            <a href="./html/studentCampus.html"
+                                                class="btn text-center align-content-center d-grid">Conocer
+                                                más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="escuelas-go4it" id="sectionEscuelas">
+            <div class="container-go4it text-center">
+                <h2 class="txt-go4it-h2">
+                    Nuestras Escuelas
+                </h2>
+                <div class="nuestras-escuelas-go4it">
+                    <div class="contenedor-ciudades-go4it">
+                        <div class="ciudades-go4it clicked" data-ciudad="limerick" data-cards="limerick">
+                            <img src="./img/ciudades/limerick.avif" alt="">
+                            <span class="nombre-ciudad">Limerick</span>
+                        </div>
+                        <div class="ciudades-go4it" data-ciudad="dublin" data-cards="dublin">
+                            <img src="./img/ciudades/dublin.avif" alt="">
+                            <span class="nombre-ciudad">Dublin</span>
+                        </div>
+                        <div class="ciudades-go4it" data-ciudad="cork" data-cards="cork">
+                            <img src="./img/ciudades/Cork.avif" alt="">
+                            <span class="nombre-ciudad">Cork</span>
+                        </div>
+                        <div class="ciudades-go4it" data-ciudad="drogheda" data-cards="drogeda">
+                            <img src="./img/ciudades/drogheda.avif" alt="">
+                            <span class="nombre-ciudad">Drogheda</span>
+                        </div>
+                    </div>
+
+                    <div class="escuelas-go4it">
+                        <section id="limerick" class="splide" aria-label="Beautiful Images">
+                            <div class="container-go4it">
+                                <div class="titulo-descarga-go4it">
+                                    <h3 id="tituloEscuelas" class="text-center">Limerick</h3>
+                                    <div>
+                                        <a href="./archivos/Brochure_go4it.pdf" download>Brochure Limerick</a>
+                                        <img src="./svg/descarga.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="splide__track ">
+                                    <ul class="splide__list lista-escuelas-go4it">
+                                        <li class="splide__slide card-ciudad-go4it" data-ciudad="limerick">
+                                            <div class="tarjetas-escuelas">
+                                                <div class="escuelas ">
+                                                    <div class="card-go4it">
+                                                        <img class="card-img-top" src="./img/rightWord.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">
+                                                                Rightword es una destacada
+                                                                y moderna
+                                                                escuela de
+                                                                inglés. </p>
+                                                            <p> Ubicada
+                                                                en la calle The Crescent Street en el corazón de la
+                                                                vibrante ciudad de
+                                                                Limerick, con una
+                                                                distancia
+                                                                caminable a las atraccións de la tercera ciudad más
+                                                                grande de Irlanda.
+
+                                                            </p>
+                                                            <a href="./html/rightWord.html"
+                                                                class="btn-escuela-go4it">Conocer
+                                                                más</a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide card-ciudad-go4it" data-ciudad="limerick">
+                                            <div class="tarjetas-escuelas">
+
+                                                <div class="escuelas ">
+
+                                                    <div class="card-go4it">
+                                                        <img class="card-img-top" src="./img/studentCampus.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">Student campus es una
+                                                                escuela de ingles
+                                                                ubicada
+                                                                en el centro de
+                                                                la ciudad de Limerick.
+                                                            </p>
+                                                            <p>Esta escuela se encuentra justo
+                                                                en
+                                                                el corazón de la
+                                                                ciudad,
+                                                                rodeada de tiendas, restaurantes, principales paradas de
+                                                                bus y
+                                                                supermercados.</p>
+                                                            <a href="./html/studentCampus.html"
+                                                                class="btn-escuela-go4it">Conocer
+                                                                más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide card-ciudad-go4it"
+                                            data-ciudad="limerick dublin drogheda">
+                                            <div class="tarjetas-escuelas">
+                                                <div class="escuelas ">
+                                                    <div class="card-go4it">
+                                                        <img class="card-img-top"
+                                                            src="./img/cropped-English-Language-Institute.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">Fundada en 2017, ELI
+                                                                Schools es una empresa
+                                                                líder en formación
+                                                                del idioma inglés con tres escuelas abiertas durante
+                                                                todo el año en
+                                                                Irlanda.
+                                                            </p>
+                                                            <p>
+                                                                Nominada en 2001 por colegas y socios de la industria
+                                                                entre las mejores
+                                                                nuevas escuelas de
+                                                                inglés en Europa.
+                                                            </p>
+                                                            <a href="./html/studentCampus.html"
+                                                                class="btn-escuela-go4it">Conocer
+                                                                más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide card-ciudad-go4it" data-ciudad="cork dublin">
+                                            <div class="tarjetas-escuelas">
+                                                <div class="escuelas ">
+                                                    <div class="card-go4it">
+                                                        <img class="card-img-top" src="./img/icot.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">ICOT College es una
+                                                                escuela de inglés con campus en Dublín y Cork. </p>
+                                                            <p>
+                                                                Con más de 10 años de experiencia sustancial. Inansable
+                                                                trabajo para asegurarnos de que la calidad de nuestros
+                                                                servicios mejore constantemente.
+                                                            </p>
+                                                            <a href="./html/studentCampus.html"
+                                                                class="btn-escuela-go4it">Conocer
+                                                                más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide card-ciudad-go4it" data-ciudad="dublin">
+                                            <div class="tarjetas-escuelas">
+                                                <div class="escuelas ">
+                                                    <div class="card-go4it">
+                                                        <img class="card-img-top" src="./img/englishour.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">Englishour, se encuentra
+                                                                en el centro de Dublín, es una Escuela de Ingles
+                                                                establecida, fundada en 2010.</p>
+                                                            <p> Estudiantes
+                                                                de todo el mundo han mejorado sus
+                                                                habilidades comunicacionales con el idioma gracias a
+                                                                Englishour.
+                                                            </p>
+                                                            <a href="./html/studentCampus.html"
+                                                                class="btn-escuela-go4it">Conocer
+                                                                más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <!-- <script src="./splide-4.1.3/dist/js/splide.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="./js/splide/splide.js"></script>
+    <script src="./js/splides_go4it.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="./js/escuelas.js"></script>
+    <script src="./js/nav.js"></script>
+
+</body>
+
+
+
+</html>
