@@ -3,6 +3,33 @@
   
   }
 
+  /* *Wsp */
+
+.float-w {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 3rem;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 24px;
+  z-index: 100;
+}
+
+.my-float {
+  display: grid;
+  margin-top: 13px;
+  margin-left: 2px;
+  color: #fff;
+}
+
+.my-float:hover {
+  transition: all .2s ease;
+  transform: scale(1.2);
+}
   
   
   
@@ -51,8 +78,10 @@
     .social {
       position: fixed;
       /* top: 450px; */
-      top: 50%;
+      /* top: 50%; */
       z-index: 1;
+      top: calc(50% - 70px);
+
     }
   
     .social a {

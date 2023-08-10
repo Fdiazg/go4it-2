@@ -31,6 +31,10 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+main {
+    background: #f7f9fa;
+}
+
 
 /* *Transvesal */
 
@@ -144,6 +148,29 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+.text-verde {
+    color: var(--primario-color-verde)
+}
+
+.text-celeste {
+    color: var(--primario-color-celeste)
+}
+
+.text-celeste-claro {
+    color: var(--primario-color-celeste-claro)
+}
+
+.text-celeste-oscuro {
+    color: var(--primario-color-celeste-oscuro)
+}
+
+.text-morado {
+    color: var(--primario-color-morado)
+}
+
+.text-amarillo {
+    color: var(---primario-color-amarillo)
+}
 
 
 
@@ -270,14 +297,16 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 18px;
 }
 
-.nosotros-go4it {
-    background: var(--color-3-opacity-1);
-}
-
 
 /* ? porque irlanda */
 
-.section-porque-go4it {
+.porque-go4it {
+    padding: 2rem 0;
+    /* background: var(--color-3-opacity-1); */
+
+}
+
+.section-row-go4it {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -292,7 +321,7 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 10px;
 }
 
-.texto-porque-go4it {
+.texto-section-go4it {
     flex-basis: 50%;
 }
 
@@ -315,6 +344,30 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+/* ? Escuelas */
+
+.contenedor-escuelas-go4it {
+    padding: 2rem 0;
+    /* background: var(--primario-color-celeste-opacity-2); */
+
+}
+
+
+
+/* ? Nosotros */
+.contenedor-nosotros-go4it {
+    padding: 2rem 0;
+}
+
+.imagenes-nosotros-go4it {
+    display: flex;
+}
+
+.imagen-nosotros {
+    max-height: 250px;
+    width: auto;
+    margin: 0 10px;
+}
 
 
 
