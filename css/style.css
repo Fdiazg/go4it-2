@@ -98,7 +98,8 @@ main {
 }
 
 .btn-go4it {
-    padding: 6px 18px;
+    /* padding: 6px 18px; */
+    padding:  8px 24px;
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
@@ -217,7 +218,9 @@ main {
     color: #000000;
     background: var(--primario-color-amarillo);
     gap: 8px;
-    padding: 4px;
+    /* padding: 4px; */
+    padding: 8px 24px;
+
     border-radius: 5px;
     align-items: center;
 }
@@ -239,7 +242,7 @@ main {
     /* padding-top: 5.5rem; */
     display: flex;
     /* padding-bottom: 72px; */
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     flex-direction: row;
     /* justify-content: center; */
     /* background: var(--color-4-opacity-1); */
@@ -301,7 +304,7 @@ main {
 /* ? porque irlanda */
 
 .porque-go4it {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     /* background: var(--color-3-opacity-1); */
 
 }
@@ -310,6 +313,9 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 
@@ -347,7 +353,7 @@ main {
 /* ? Escuelas */
 
 .contenedor-escuelas-go4it {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     /* background: var(--primario-color-celeste-opacity-2); */
 
 }
@@ -356,7 +362,7 @@ main {
 
 /* ? Nosotros */
 .contenedor-nosotros-go4it {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .imagenes-nosotros-go4it {
@@ -364,9 +370,11 @@ main {
 }
 
 .imagen-nosotros {
-    max-height: 250px;
-    width: auto;
+    max-height: 250px; 
+    width: 100%;
     margin: 0 10px;
+    max-width: 250px;
+    object-fit: cover;
 }
 
 

@@ -11,21 +11,21 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    new Splide("#limerick", {
-        perPage: 4, // Number of cards displayed on desktop view
-        perMove: 1, // Number of cards to move on each transition
-        gap: "1rem", // Space between cards
+    new Splide("#seccion-escuelas", {
+        perPage: 3,
+        perMove: 1,
+        gap: "1rem",
         destroy: false,
-		arrows: false,
-		// arrow : false,
-		// prev  : false,
-		// next  : false,
+        arrows: false,
+        type: 'slide',
+        fixedWidth: 220,
+
 
         breakpoints: {
             768: {
                 destroy: false,
-                type: "loop", // Enables the infinite loop in the carousel
-                perPage: 1, // Number of cards displayed on mobile view
+                type: "loop",
+                perPage: 1,
                 arrows: true,
             },
         },

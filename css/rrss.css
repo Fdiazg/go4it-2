@@ -26,7 +26,7 @@
   color: #fff;
 }
 
-.my-float:hover {
+.float-w:hover .my-float{
   transition: all .2s ease;
   transform: scale(1.2);
 }

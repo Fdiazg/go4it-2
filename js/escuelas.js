@@ -20,7 +20,6 @@ function toggleCiudad(e) {
     seleccionarCiudad.forEach(ciudadT => {
         if (ciudadT === ciudadActual) {
             ciudadActual.classList.add('clicked');
-            // const cards = document.querySelectorAll('.card-ciudad-go4it');
             tituloEscuelas.textContent = `${ciudadT.dataset.ciudad}`
             tituloEscuelas.style.textTransform = "capitalize";
             cards.forEach(card => {
