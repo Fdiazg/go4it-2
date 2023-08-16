@@ -67,7 +67,8 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
+  padding: .5rem 0;
 }
 
 
@@ -77,8 +78,10 @@
 .main-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
+  gap: 2rem;
   margin: 0;
+  font-weight: 300;
 }
 
 .main-menu-item {
@@ -88,7 +91,8 @@
 .main-menu-link {
   text-decoration: none;
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .main-menu-link:hover,
@@ -126,7 +130,8 @@
 
 .sub-menu-link {
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
+  color: #000;
 }
 
 /* Estilos para los submenús secundarios */

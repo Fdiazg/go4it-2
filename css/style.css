@@ -31,9 +31,9 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-main {
+/* main {
     background: #f7f9fa;
-}
+} */
 
 
 /* *Transvesal */
@@ -65,8 +65,10 @@ main {
     /* background-image: radial-gradient(circle at 100% 60%, #fc5e9b, #735adb 73%, #3f90e5 88%, #ecedef 165%, #f0eff0 165%); */
     background-image: var(--radial-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; 
+    box-decoration-break: clone; 
 }
 
 @-moz-keyframes gradient-fill {
@@ -289,7 +291,8 @@ main {
     margin-bottom: 48px; */
     flex-direction: column;
     justify-content: flex-start;
-    padding: 6rem;
+    /* padding: 6rem; */
+    padding: 6rem 6rem 6rem 0;
 }
 
 .img-banner {
@@ -314,6 +317,7 @@ main {
 .porque-go4it {
     padding: 1.5rem 0;
     /* background: var(--color-3-opacity-1); */
+    background: var(--fondo-1);
 
 }
 
@@ -371,6 +375,7 @@ main {
 /* ? Nosotros */
 .contenedor-nosotros-go4it {
     padding: 1.5rem 0;
+    background: var(--fondo-1);
 }
 
 .imagenes-nosotros-go4it {
@@ -427,9 +432,6 @@ main {
     border-radius: 24px;
 
 }
-
-
-
 
 
 .form-group-go4it {
@@ -528,9 +530,91 @@ main {
 .form-group-go4it input:not(:placeholder-shown):invalid {
     border-color: red;
 }
+
 /* .form-group-go4it input:invalid + label {
     color: red;
 } */
+
+
+
+
+/* ? Footer */
+
+.contenedor-footer-go4it {
+    padding: 1.5rem 0;
+}
+
+.svg-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* .link-footer {
+    color: var(--color-plomo-oscuro);
+} */
+
+.link-footer:hover span {
+    color: var(--color-negro);
+    /* border-bottom: 1px solid var(--primario-color-celeste); */
+}
+
+.link-footer:hover .bi-envelope {
+    color: #0084c6;
+}
+
+.link-footer:hover .bi-telephone {
+    color: #0b6e31;
+}
+
+.link-footer:hover .bi-whatsapp {
+    color: #24cc63;
+}
+
+.link-footer:hover .bi-instagram {
+    color: #f62782;
+}
+
+
+.link-footer:hover .bi-geo-alt {
+    color: #ffd301;
+}
+
+
+.link-footer i {
+    padding-right: 1rem;
+}
+
+.footer-info h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.infoFoot {
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1024px) {
