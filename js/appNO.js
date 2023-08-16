@@ -102,7 +102,6 @@ document.addEventListener("click", function (event) {
 
 const links = document.querySelectorAll('.main-nav__link-activo');
 
-// agrega un evento de clic a cada enlace
 links.forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();

@@ -1,8 +1,14 @@
 
 
-const seleccionarCiudad = document.querySelectorAll('.ciudades-go4it');
-const cards = document.querySelectorAll('.card-ciudad-go4it')
-const tituloEscuelas = document.querySelector('#tituloEscuelas')
+const seleccionarCiudad = document.querySelectorAll('[data-cards]');
+const cards = document.querySelectorAll('.card-ciudad-go4it');
+const tituloEscuelas = document.querySelector('#tituloEscuelas');
+const ciudadImagen = document.querySelectorAll('.ciudades-go4it');
+
+const documentoBrochure = document.querySelectorAll('[data-doc]')
+
+
+
 
 cards.forEach(ocultar => {
     if (ocultar.dataset.ciudad.includes('limerick')) {
@@ -17,66 +23,43 @@ cards.forEach(ocultar => {
 function toggleCiudad(e) {
     const ciudadActual = e.currentTarget;
     const ciudad = ciudadActual.dataset.ciudad;
-    seleccionarCiudad.forEach(ciudadT => {
-        if (ciudadT === ciudadActual) {
-            ciudadActual.classList.add('clicked');
-            tituloEscuelas.textContent = `${ciudadT.dataset.ciudad}`
-            tituloEscuelas.style.textTransform = "capitalize";
-            cards.forEach(card => {
 
-
-
-                const cardCiudades = card.dataset.ciudad.split(' ');
-                if (cardCiudades.includes(ciudad)) {
-                    card.classList.remove('d-none');
-
-                } else {
-                    card.classList.add('d-none');
-
-                }
-            });
+    //Imagen
+    ciudadImagen.forEach(ciudadClicked => {
+        if (ciudadClicked.dataset.cards === ciudad) {
+            ciudadClicked.classList.add('clicked');
         } else {
-            ciudadT.classList.remove('clicked');
+            ciudadClicked.classList.remove('clicked');
         }
     });
+
+    //Cards
+    cards.forEach(card => {
+        const cardCiudades = card.dataset.ciudad.split(' ');
+        if (cardCiudades.includes(ciudad)) {
+            card.classList.remove('d-none');
+        } else {
+            card.classList.add('d-none');
+        }
+    });
+
+    //Documentos
+    documentoBrochure.forEach(documento => {
+        const dataDocValue = documento.dataset.doc;
+        if (dataDocValue === ciudad) {
+            documento.classList.remove('d-none');
+        } else {
+            documento.classList.add('d-none');
+        }
+    });
+
+    tituloEscuelas.textContent = `${ciudad.charAt(0).toUpperCase() + ciudad.slice(1)}`;
 }
+
+
+
 seleccionarCiudad.forEach(ciudad => {
+
     ciudad.addEventListener('click', toggleCiudad);
 
 });
-
-
-
-
-
-
-
-
-
-
-// const dataCiudad = document.querySelectorAll('[data-cards]');
-// const dataDestino = document.querySelectorAll('[data-destino]');
-
-// dataDestino.forEach(destino => {
-
-//     dataCiudad.forEach(ciudad => {
-//         const nombreCiudades = ciudad.getAttribute('data-cards')
-
-//         const nombreDestino = destino.querySelector('a')
-//         nombreDestino.href = `#${nombreCiudades}`;
-
-//         console.log(nombreDestino.href)
-//     })
-// })
-
-
-
-
-
-
-
-// function anclaDestino() {
-
-
-// }
-// anclaDestino()

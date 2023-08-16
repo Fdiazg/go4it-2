@@ -1,4 +1,5 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
+// const dataDestino = document.querySelector(".link-ciudades")
 
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
