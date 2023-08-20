@@ -7,6 +7,7 @@ const ciudadImagen = document.querySelectorAll('.ciudades-go4it');
 
 const documentoBrochure = document.querySelectorAll('[data-doc]')
 
+const gridEscuelas = document.querySelector('.lista-escuelas-go4it')
 
 
 
@@ -34,13 +35,31 @@ function toggleCiudad(e) {
     });
 
     //Cards
+    let cantidadDeTarjetas = 0
     cards.forEach(card => {
         const cardCiudades = card.dataset.ciudad.split(' ');
         if (cardCiudades.includes(ciudad)) {
             card.classList.remove('d-none');
+            cantidadDeTarjetas++;
+
+            if (cantidadDeTarjetas === 3) {
+                gridEscuelas.style.gridTemplateColumns = "repeat(3, 1fr)";
+                gridEscuelas.style.justifyItems = "start"
+
+            } else if (cantidadDeTarjetas === 2) {
+                gridEscuelas.style.gridTemplateColumns = "repeat(2, 1fr)";
+                gridEscuelas.style.justifyItems = "center"
+
+            } else if (cantidadDeTarjetas === 1) {
+                gridEscuelas.style.gridTemplateColumns = "repeat(1, 1fr)";
+                gridEscuelas.style.justifyItems = "center"
+            }
+
         } else {
             card.classList.add('d-none');
         }
+
+        console.log(cantidadDeTarjetas)
     });
 
     //Documentos

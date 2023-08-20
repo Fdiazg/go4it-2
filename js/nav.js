@@ -1,8 +1,10 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 // const dataDestino = document.querySelector(".link-ciudades")
+const navMenu = document.querySelector('.nav-go4it')
 
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
+    navMenu.classList.toggle('nav-open')
 });
 
 const enlacesScroll = document.querySelectorAll('.enlace-scroll');

@@ -1,9 +1,9 @@
-
-.contenedor-seccion-escuelas{
+.contenedor-seccion-escuelas {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  /* align-items: baseline; */
   gap: 4rem;
+  align-items: center;
 }
 
 .contenedor-ciudades-go4it {
@@ -41,8 +41,9 @@
 
 
 
-.contenedor-tarjetas{
+.contenedor-tarjetas {
   border: 1px solid transparent;
+  width: 100%;
 }
 
 
@@ -59,17 +60,29 @@
 } */
 
 .lista-escuelas-go4it {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center; */
+  gap: 1rem;
 
-  gap: 2rem;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding: 1rem 0;
+
+
 }
 
 .card-ciudad-go4it {
-  width: calc(33.33% - 40px); 
+  /* width: calc(33.33% - 40px); */
 }
 
+/* .card-ciudad-go4it {
+  max-height: 350px;
+
+} */
 
 
 .card-ciudad-go4it {
@@ -99,16 +112,16 @@
 }
 
 
-.card-body-go4it{
+.card-body-go4it {
   padding: .5rem;
 }
 
-.card-body-go4it p{
-margin-bottom: .5rem;
-  
+.card-body-go4it p {
+  margin-bottom: .5rem;
+
 }
 
-.tarjetas-escuelas{
+.tarjetas-escuelas {
   border-radius: 8px;
   box-shadow: 0px 2px 8px rgba(1, 0, 0, .3);
   transition: .3s all ease;
@@ -117,27 +130,29 @@ margin-bottom: .5rem;
   max-height: 390px;
 
 }
+
 .tarjetas-escuelas {
-  height: 100%; 
+  height: 100%;
 }
 
-.tarjetas-escuelas:hover{
+.tarjetas-escuelas:hover {
   transform: scale(1.01);
   transition: .3s all ease;
 }
 
 
-.tarjetas-escuelas img{
+.tarjetas-escuelas img {
   width: 100%;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   max-height: 60px;
   padding: .25rem;
 
-  object-fit: scale-down; 
+  object-fit: scale-down;
 
 }
-.card-img-top{
+
+.card-img-top {
   border-bottom: 1px solid var(--primario-color-celeste);
 }
 
@@ -161,10 +176,7 @@ margin-bottom: .5rem;
 }
 
 
-.card-ciudad-go4it {
-  max-height: 350px;
 
-}
 
 .escuelas {
   height: inherit;
@@ -175,4 +187,81 @@ margin-bottom: .5rem;
 
 
 
+@media (max-width:960px) {
+  .contenedor-seccion-escuelas {
 
+    gap: 1rem;
+    /* align-items: flex-start; */
+    /* flex-direction: column; */
+  }
+
+  .contenedor-tarjetas {
+
+
+    /* width: calc(50vw - 20px) */
+  }
+
+  .carrusel-cards {
+    width: 100%;
+    /* max-width: 530px; */
+
+    max-width: calc(71vw - 20px);
+
+  }
+
+  .card-ciudad-go4it {
+    max-height: unset;
+    /* width: 100%; */
+    /* width: 225px; */
+    width: 280px;
+    padding-left: 10px;
+
+  }
+
+  .tarjetas-escuelas {
+    max-height: unset;
+  }
+
+  .lista-escuelas-go4it {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: scroll;
+  }
+
+
+
+
+}
+
+
+@media (max-width:768px) {
+  .contenedor-seccion-escuelas {
+    gap: 1rem;
+    /* align-items: flex-start; */
+    flex-direction: column;
+  }
+
+  .carrusel-cards {
+    width: 100%;
+    /* max-width: 530px; */
+    max-width: calc(94vw - 20px);
+  }
+
+  .contenedor-ciudades-go4it {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .ciudades-go4it.clicked {
+    transform: translateX(0);
+    transform: translateY(8px);
+  }
+
+  .ciudades-go4it img {
+    max-height: 110px;
+    width: 100%;
+  }
+
+
+}

@@ -223,3 +223,34 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+
+
+@media (max-width:768px){
+  .container-nav .nav-go4it{
+    display: flex;
+    /* position: absolute; */
+    position: fixed;
+    top: 52px;
+    right: -200px;
+    background: #fff;
+    transition: right .3s ease;
+  }
+  .container-nav .nav-go4it.nav-open{
+    display: flex;
+    /* position: absolute; */
+    top: 52px;
+    right: 0;
+    background: #fff;
+  }
+
+
+  .container-nav .main-menu{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .main-menu-item{
+    padding: 1rem;
+  }
+}
