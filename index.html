@@ -7,6 +7,8 @@
     <title>Go4it!</title>
     <!-- <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css"> -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
     <link rel="shortcut icon" href="img/Logo2.ico">
     <link rel="stylesheet" href="./css/variables/colores.css">
     <link rel="stylesheet" href="./css/variables/transiciones.css">
@@ -54,37 +56,42 @@
                         </li>
 
                         <li class="main-menu-item">
-                            <a class="main-menu-link" href="#">Cursos de inglés
+                            <span class="main-menu-link">Cursos de inglés
                                 <img src="./svg/arrow_bottom.svg" alt="">
-                            </a>
+                            </span>
                             <ul class="sub-menu">
                                 <li class="sub-menu-item">
-                                    <a class="sub-menu-link" href="#">Irlanda
+                                    <span class="sub-menu-link" href="#">Irlanda
                                         <img src="./svg/arrow_right.svg" alt="">
-                                    </a>
-                                    <ul class="sub-sub-menu">
+                                    </span>
+                                    <div class="contenedor-pais">
 
-                                        <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
-                                                href="#sectionEscuelas" class="enlace-scroll">Limerick
+                                        <ul class="sub-sub-menu">
 
-                                            </a></li>
-                                        <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
-                                                href="#sectionEscuelas" class="enlace-scroll">Dublin
+                                            <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Limerick
 
-                                            </a>
-                                        </li>
-                                        <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a
-                                                href="#sectionEscuelas" class="enlace-scroll">Cork
-                                            </a></li>
-                                        <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
-                                                href="#sectionEscuelas" class="enlace-scroll">Drogheda
-                                            </a></li>
-                                    </ul>
+                                                </a></li>
+                                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Dublin
+
+                                                </a>
+                                            </li>
+                                            <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Cork
+                                                </a></li>
+                                            <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Drogheda
+                                                </a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <!-- <li class="sub-menu-item">
                                     <a class="sub-menu-link" href="#">Australia
                                         <img src="./svg/arrow_right.svg" alt="">
                                     </a>
+                                                                        <div class="contenedor-pais">
+
                                     <ul class="sub-sub-menu">
                                         <li class="link-ciudades" data-destino="sidney">
                                             <a href="#sectionEscuelas">Sidney</a>
@@ -93,6 +100,8 @@
                                             <a href="#sectionEscuelas">Adelaida</a>
                                         </li>
                                     </ul>
+                                                                        </div>
+
                                 </li> -->
                             </ul>
 
@@ -102,7 +111,7 @@
                             <a class="main-menu-link" href="#">WH</a>
                         </li>
                         <li class="main-menu-item">
-                            <a class="main-menu-link" href="#formInfo">Contacto</a>
+                            <a class="main-menu-link" href="#formInfo">Contácto</a>
                         </li>
                     </ul>
                 </nav>
@@ -232,44 +241,42 @@
 
                     <div class="escuelas-go4it">
                         <section id="seccion-escuelas" aria-label="Beautiful Images">
-                            <div class="container-go4itNO">
 
-                                <div class="contenedor-seccion-escuelas">
-                                    <div class="contenedor-ciudades-go4it">
-                                        <div class="ciudades-go4it clicked" data-ciudad="limerick"
-                                            data-cards="limerick">
-                                            <img src="./img/ciudades/limerick.avif" alt="">
-                                            <span class="nombre-ciudad">Limerick</span>
-                                        </div>
-                                        <div class="ciudades-go4it" data-ciudad="dublin" data-cards="dublin">
-                                            <img src="./img/ciudades/dublin.avif" alt="">
-                                            <span class="nombre-ciudad">Dublin</span>
-                                        </div>
-                                        <div class="ciudades-go4it" data-ciudad="cork" data-cards="cork">
-                                            <img src="./img/ciudades/Cork.avif" alt="">
-                                            <span class="nombre-ciudad">Cork</span>
-                                        </div>
-                                        <div class="ciudades-go4it" data-ciudad="drogheda" data-cards="drogheda">
-                                            <img src="./img/ciudades/drogheda.avif" alt="">
-                                            <span class="nombre-ciudad">Drogheda</span>
+                            <div class="contenedor-seccion-escuelas">
+                                <div class="contenedor-ciudades-go4it">
+                                    <div class="ciudades-go4it clicked" data-ciudad="limerick" data-cards="limerick">
+                                        <img src="./img/ciudades/limerick.avif" alt="">
+                                        <span class="nombre-ciudad">Limerick</span>
+                                    </div>
+                                    <div class="ciudades-go4it" data-ciudad="dublin" data-cards="dublin">
+                                        <img src="./img/ciudades/dublin.avif" alt="">
+                                        <span class="nombre-ciudad">Dublin</span>
+                                    </div>
+                                    <div class="ciudades-go4it" data-ciudad="cork" data-cards="cork">
+                                        <img src="./img/ciudades/Cork.avif" alt="">
+                                        <span class="nombre-ciudad">Cork</span>
+                                    </div>
+                                    <div class="ciudades-go4it" data-ciudad="drogheda" data-cards="drogheda">
+                                        <img src="./img/ciudades/drogheda.avif" alt="">
+                                        <span class="nombre-ciudad">Drogheda</span>
+                                    </div>
+                                </div>
+                                <div class="contenedor-tarjetas">
+                                    <div class="titulo-descarga-go4it">
+                                        <h3 id="tituloEscuelas" class="text-center">Limerick</h3>
+                                        <div>
+                                            <a data-doc='limerick' class="" href="./archivos/Brochure_go4it.pdf"
+                                                download>Brochure Limerick</a>
+                                            <a data-doc='dublin' class="d-none" href="./archivos/Brochure_go4it.pdf"
+                                                download>Brochure Dublín</a>
+                                            <a data-doc='cork' class="d-none" href="./archivos/Brochure_go4it.pdf"
+                                                download>Brochure Cork</a>
+                                            <a data-doc='drogheda' class="d-none" href="./archivos/Brochure_go4it.pdf"
+                                                download>Brochure Drogheda</a>
+                                            <img src="./svg/descarga.svg" alt="">
                                         </div>
                                     </div>
-                                    <div class="contenedor-tarjetas">
-                                        <div class="titulo-descarga-go4it">
-                                            <h3 id="tituloEscuelas" class="text-center">Limerick</h3>
-                                            <div>
-                                                <a data-doc='limerick' class="" href="./archivos/Brochure_go4it.pdf"
-                                                    download>Brochure Limerick</a>
-                                                <a data-doc='dublin' class="d-none" href="./archivos/Brochure_go4it.pdf"
-                                                    download>Brochure Dublín</a>
-                                                <a data-doc='cork' class="d-none" href="./archivos/Brochure_go4it.pdf"
-                                                    download>Brochure Cork</a>
-                                                <a data-doc='drogheda' class="d-none"
-                                                    href="./archivos/Brochure_go4it.pdf" download>Brochure Drogheda</a>
-                                                <img src="./svg/descarga.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="carrusel-cards">
+                                    <div class="carrusel-cards">
                                         <ul class="lista-escuelas-go4it">
                                             <li class="card-ciudad-go4it" data-ciudad="limerick">
                                                 <div class="tarjetas-escuelas">
@@ -340,8 +347,10 @@
                                                                 durante todo el año en Irlanda.
                                                             </p>
                                                             <p class="card-text text-center">
-                                                                Nominada en 2001 por colegas y socios de la industria
-                                                                entre las mejores nuevas escuelas de inglés en Europa.
+                                                                Nominada en 2001 por colegas y socios de la
+                                                                industria
+                                                                entre las mejores nuevas escuelas de inglés en
+                                                                Europa.
                                                             </p>
 
 
@@ -364,7 +373,8 @@
                                                                 en Dublín y Cork.
                                                             </p>
                                                             <p class="card-text text-center">
-                                                                Con una experiencia sólida de más de 10 años, ICOT ha
+                                                                Con una experiencia sólida de más de 10 años, ICOT
+                                                                ha
                                                                 trabajado incansablemente para garantizar una mejora
                                                                 constante en la calidad de sus servicios.
                                                             </p>
@@ -401,7 +411,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -420,7 +429,7 @@
                 <div class="section-row-go4it">
 
                     <div id=" " class="texto-section-go4it text-center ">
-                        <h2 class="txt-go4it-h2"> <span class="text-celeste-oscuro"> ¿Quienes</span> somos?
+                        <h2 class="txt-go4it-h2"> <span class="text-celeste-oscuro"> ¿Quiénes</span> somos?
                         </h2>
                         <div class="nosotros-text text-left-go4it">
                             <p>
@@ -455,7 +464,7 @@
         <section class="infoContacto " id="formInfo">
             <div class="container-go4it">
                 <form id="form" class="formInfo" method="post" action="https://formspree.io/f/xayzbqra">
-                    <h3 class="txt-go4it-h3">¿Tienes dudas?</h3>
+                    <h3 class="txt-go4it-h3">Contáctanos</h3>
                     <div class="nombre form-group-go4it">
                         <input class="form-control-go4it" type="text" id="nombre" name="nombre" minlength="5"
                             maxlength="50" placeholder="Nombre completo" required>
@@ -498,10 +507,13 @@
         <footer id="footer" class="contenedor-footer-go4it">
             <!-- <img class="svg-background" src="./svg/wave.svg" alt="fondo-footer"> -->
             <div class="container-go4it">
+
                 <div class="footer-info">
+
                     <div class="lista-links">
-                        <h4>Comunícate con nosotros</h4>
                         <ul class="infoFoot">
+                            <h4>Comunícate con nosotros</h4>
+
                             <li>
                                 <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
                                     <i class=" bi bi-envelope"></i><span>info@go4it.cl</span>
@@ -510,6 +522,40 @@
                             <li>
                                 <a class="link-footer" href="tel:+353894553685">
                                     <i class=" bi bi-telephone"></i><span>+353894553685</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer"
+                                    href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!"
+                                    target="_blank">
+                                    <i class=" bi bi bi-whatsapp"></i><span>What's App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="https://www.instagram.com/go4it" target="_blank">
+                                    <i class=" bi bi-instagram"></i><span>Go4it!</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a class="link-footer" href="#">
+                                    <i class=" bi bi-geo-alt "></i><span>Limerick, Irlanda</span>
+                                </a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                    <!-- <div class="lista-links">
+                        <ul class="infoFoot">
+                            <h4>Links rápidos</h4>
+
+                            <li>
+                                <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+                                    <span>Quienes somos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="tel:+353894553685">
+                                    <span>Quienes somos</span>
                                 </a>
                             </li>
                             <li>
@@ -531,35 +577,46 @@
                             </li>
 
                         </ul>
+                    </div> -->
+                    <div class="lista-links">
+                        <ul class="infoFoot">
+                            <h4>Ciudades</h4>
+
+
+                            <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Limerick
+
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Dublin
+
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a href="#sectionEscuelas"
+                                    class="enlace-scroll">Cork
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Drogheda
+                                </a>
+                            </li>
+
+                        </ul>
                     </div>
                     <div class="lista-links">
-                        <h4>Comunícate con nosotros</h4>
                         <ul class="infoFoot">
-                            <li>
-                                <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
-                                    <i class=" bi bi-envelope"></i><span>info@go4it.cl</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="link-footer" href="tel:+353894553685">
-                                    <i class=" bi bi-telephone"></i><span>+353894553685</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="link-footer"
-                                    href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!"
-                                    target="_blank">
-                                    <i class=" bi bi bi-whatsapp"></i><span>What's App</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="link-footer" href="https://www.instagram.com/go4it" target="_blank">
-                                    <i class=" bi bi-instagram"></i><span>Go4it!</span>
-                                </a>
-                            </li>
+                            <a href="https://goo.gl/maps/1Ux2Cj64CXDDs4D36" target="_blank">
+                                <h4>
+                                    Limerick, Irlanda
+                                    <i class=" bi bi-geo-alt "></i>
+                                </h4>
+                            </a>
                             <li>
                                 <a class="link-footer" href="#">
-                                    <i class=" bi bi-geo-alt "></i><span>Limerick, Irlanda</span>
+
+                                    <div id="mapa" style=" height: 150px;"></div>
+
                                 </a>
                             </li>
 
@@ -569,12 +626,14 @@
                 </div>
             </div>
 
+
+
+
             <a class="float-w" href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20inglés!"
                 target="_blank">
                 <i class="bi bi-whatsapp my-float"></i>
             </a>
         </footer>
-
 
 
 
@@ -593,6 +652,9 @@
     <script src="./js/escuelas.js"></script>
     <script src="./js/nav.js"></script>
     <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
 
     <script src="./js/api.js"></script>
 
