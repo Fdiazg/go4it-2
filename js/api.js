@@ -49,12 +49,25 @@ document.addEventListener('DOMContentLoaded', () => {
 // TODO API MAPA
 
 
-var mapa = L.map('mapa').setView([52.6641, -8.6236], 10); // Latitud, Longitud, y nivel de zoom
+// const mapa = L.map('mapa').setView([52.6641, -8.6236], 10); // Latitud, Longitud, y nivel de zoom
+
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+// }).addTo(mapa);
+
+// L.marker([52.6641, -8.6236]).addTo(mapa)
+//     .bindPopup('Limerick, Irlanda')
+//     .openPopup();
+
+
+//TODO mapa rightword
+
+const mapaRightword = L.map('mapa-rightword').setView([52.6593398, -8.6317434], 15); // Latitud, Longitud, y nivel de zoom
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mapa);
+}).addTo(mapaRightword);
 
-L.marker([52.6641, -8.6236]).addTo(mapa)
-    .bindPopup('Limerick, Irlanda')
+L.marker([52.6593398, -8.6317434]).addTo(mapaRightword)
+    .bindPopup('Rightword')
     .openPopup();

@@ -33,34 +33,6 @@ enlacesScroll.forEach(enlace => {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Verifica la resolución de la pantalla
-//   if (window.innerWidth < 760) {
-//     // Encuentra todos los marcadores de posición
-//     var marcadoresDePosicion = document.querySelectorAll(".contenedor-pais-placeholder");
-
-//     // Itera a través de los marcadores de posición
-//     marcadoresDePosicion.forEach(function (placeholder) {
-//       // Crea un nuevo contenedor para cada marcador de posición
-//       var contenedorPais = document.createElement("div");
-//       contenedorPais.className = "contenedor-pais";
-
-//       // Encuentra el ul que está dentro del mismo elemento padre que el marcador de posición
-//       var ulSubSubMenu = placeholder.nextElementSibling;
-
-//       // Mueve el ul dentro del nuevo contenedor
-//       contenedorPais.appendChild(ulSubSubMenu);
-
-//       // Inserta el nuevo contenedor antes del marcador de posición
-//     placeholder.parentNode.replaceChild(contenedorPais, placeholder);
-//     });
-//   }
-// });
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
 

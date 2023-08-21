@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go4it!</title>
+    <!-- <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <link rel="shortcut icon" href="../img/Logo2.ico">
+    <link rel="stylesheet" href="../css/variables/colores.css">
+    <link rel="stylesheet" href="../css/variables/transiciones.css">
+    <link rel="stylesheet" href="../js/splide/splide.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/rrss.css">
+    <link rel="stylesheet" href="../css/escuelas.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/interior_escuelas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header class="container-fluid-no header-go4it " id="inicio">
+        <div class="container-go4it">
+            <div class="container-nav" id="container-nav">
+
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo Go 4 it original tipo.png" alt="Logo" class="user-block__logo">
+                    </a>
+
+                </div>
+
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+
+                <nav class="nav-go4it">
+                    <ul class="main-menu">
+                        <li class="main-menu-item">
+                            <a class="main-menu-link " href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="main-menu-item">
+                            <span class="main-menu-link link-activo">Cursos de inglés
+                                <img src="../svg/arrow_bottom.svg" alt="">
+                            </span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <span class="sub-menu-link" href="#">Irlanda
+                                        <img src="../svg/arrow_right.svg" alt="">
+                                    </span>
+                                    <div class="contenedor-pais">
+
+                                        <ul class="sub-sub-menu">
+
+                                            <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Limerick
+
+                                                </a></li>
+                                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Dublin
+
+                                                </a>
+                                            </li>
+                                            <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Cork
+                                                </a></li>
+                                            <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
+                                                    href="#sectionEscuelas" class="enlace-scroll">Drogheda
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- <li class="sub-menu-item">
+                                    <a class="sub-menu-link" href="#">Australia
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </a>
+                                                                        <div class="contenedor-pais">
+
+                                    <ul class="sub-sub-menu">
+                                        <li class="link-ciudades" data-destino="sidney">
+                                            <a href="#sectionEscuelas">Sidney</a>
+                                        </li>
+                                        <li class="link-ciudades" data-destino="adelaida">
+                                            <a href="#sectionEscuelas">Adelaida</a>
+                                        </li>
+                                    </ul>
+                                                                        </div>
+
+                                </li> -->
+                            </ul>
+
+
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">WH</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#formInfo">Contácto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ?RRSS* -->
+
+    <div class="social">
+        <a href="https://instagram.com">
+            <div class="social-btn color-instagram">
+                <i class="bi bi-instagram"></i>
+            </div>
+        </a>
+        <a href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!" target="_blank">
+            <div class="social-btn color-whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </a>
+        <a href="tel:+353894553685">
+            <div class="social-btn color-phone">
+                <i class="bi bi-telephone"></i>
+            </div>
+        </a>
+        <a href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+            <div class="social-btn color-correo">
+                <i class="bi bi-envelope"></i>
+            </div>
+        </a>
+    </div>
+
+
+
+    <main>
+
+        <section class="section-banner-escuelas-go4it">
+            <div class="contenedor-escuelas-go4it  container-go4it">
+                <div class="contenedor-img-escuelas">
+                    <img src="../img/rightword/Foto_rightword_izquierda.avif" alt="">
+                    <img src="../img/rightword/Foto_rightword_centro.avif" alt="">
+                    <img src="../img/rightword/Foto_rightword_derecha.avif" alt="">
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="contenedor-bajada-go4it  text-center">
+            <div class="container-go4it">
+                <div class="escuelas-row-go4it">
+                    <h2 class="txt-escuelas-go4it-h2">"Nuestro foco es que nuestros estudiantes puedan hablar y
+                        comunicarse
+                        entre ellos a través de actividades entretenidas e interactivas".
+                    </h2>
+                    <div class="bajada-escuelas-go4it text-center ">
+
+                        <div class="texto-escuelas-go4it text-left-go4it">
+                            <p>
+                                Rightword es una destacada y moderna escuela de inglés ubicada en la calle The Crescent
+                                Street en el corazón de la vibrante ciudad de Limerick, con una distancia caminable a
+                                las atraccións de la tercera ciudad más grande de Irlanda. Rightord es la perfecta
+                                elección si estás buscando integrarte dentro de una gran familia de estudiantes
+                                internacionales.
+                            </p>
+                            <p> "Desde 2016, proveemos cursos de inglés efectivos y durante todo el año para
+                                estudiantes desde nivel básico hasta avanzado en una atmósfera amigable"</p>
+
+                            <p>
+                                "Nuestros cursos de inglés están basados en investigación academica y años de
+                                experiencia enseñando. Con nuestros cursos de inglés, usamos dinámicas y atractivas
+                                actividades y metodologías."
+
+                            </p>
+
+                        </div>
+                        <div class="texto-escuelas-go4it text-left-go4it">
+                            <p>
+                                "Creemos que aprender Inglés es una tarea tanto dentro como fuera de la sala de clases.
+                                En Rightword ofrecemos lo mejor de ambos".
+                            </p>
+                            <p> Rightword tiene un programa social para sus estudiantes, para que puedan conocer gente
+                                nueva y hacer nuevos amigos mientras viajan por Irlanda. Desde clases de conversación
+                                gratuitas , talleres de preparación de CV hasta clases de Zumba.
+                            </p>
+
+                            <p>
+                                Como estudiante de Rightword, recibirás un excelente cuidado y atención desde los
+                                profesores y el personal. Experimenta sus salas de clases con tecnología interactiva y
+                                verás porque el 100% de sus estudiantes recomendarían RIghtword a sus amigos.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contenedor-bajada-go4it-2  text-center">
+            <div class="container-go4it">
+                <div class="video-escuelas">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ixyFbLlFRGo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contenedor-bajada-go4it-2  text-center">
+            <div class="contenedor-escuelas-go4it  container-go4it">
+                <div class="info-clases-go4it">
+                    <div class="horario-escuelas">
+                        <span>Horario de clases</span>
+
+                        <div class="card-escuelas">
+
+                            <p>
+                                Lunes a Viernes
+                            </p>
+                            <p>Mañana</p>
+                            <p>09:00 - 12:15</p>
+                            <p>Tarde</p>
+                            <p>13:30 - 16:45</p>
+                        </div>
+                    </div>
+                    <div class="mapa-escuelas">
+                        <div id="mapa-rightword" style="width: 500px; height: 250px;"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="infoContacto " id="formInfo">
+            <div class="container-go4it">
+                <form id="form" class="formInfo" method="post" action="https://formspree.io/f/xayzbqra">
+                    <h3 class="txt-go4it-h3">Contáctanos</h3>
+                    <div class="nombre form-group-go4it">
+                        <input class="form-control-go4it" type="text" id="nombre" name="nombre" minlength="5"
+                            maxlength="50" placeholder="Nombre completo" required>
+                        <label class="form-labe-go4itl" for="nombre">Nombre completo</label>
+
+                    </div>
+                    <div class=" correo form-group-go4it">
+                        <input type="email" class="form-control-go4it" id="email" name="email"
+                            placeholder="Correo: nombre@ejemplo.com" required
+                            pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">
+                        <label for="correo" class="form-label-go4it">Correo: nombre@ejemplo.com</label>
+
+                    </div>
+                    <div class="telefono form-group-go4it">
+                        <input class="form-control-go4it" type="number" id="telefono" name="telefono"
+                            placeholder="Teléfono" required>
+                        <label class="form-labe-go4itl" for="telefono">Teléfono</label>
+                    </div>
+                    <div class="pais form-group-go4it">
+                        <label for="pais" class=" form-label-go4it">País</label>
+
+                        <select class="form-select-go4it" name="pais" id="pais" required>
+                        </select>
+
+                    </div>
+                    <div class="form-group-go4it">
+                        <textarea class="form-control-go4it" id="mensaje" rows="5" name="mensaje"
+                            placeholder="Su mensaje con sus consultas"></textarea>
+                        <label class="form-label-go4it" for="mensaje">Su mensaje con sus consultas</label>
+
+                    </div>
+                    <button type="submit" class="btn-go4it btn-principal">Enviar!</button>
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer id="footer" class="contenedor-footer-go4it">
+            <!-- <img class="svg-background" src="./svg/wave.svg" alt="fondo-footer"> -->
+            <div class="container-go4it">
+
+                <div class="footer-info">
+
+                    <div class="lista-links">
+                        <ul class="infoFoot">
+                            <h4>Comunícate con nosotros</h4>
+
+                            <li>
+                                <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+                                    <i class=" bi bi-envelope"></i><span>info@go4it.cl</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="tel:+353894553685">
+                                    <i class=" bi bi-telephone"></i><span>+353894553685</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer"
+                                    href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!"
+                                    target="_blank">
+                                    <i class=" bi bi bi-whatsapp"></i><span>What's App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="https://www.instagram.com/go4it" target="_blank">
+                                    <i class=" bi bi-instagram"></i><span>Go4it!</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a class="link-footer" href="#">
+                                    <i class=" bi bi-geo-alt "></i><span>Limerick, Irlanda</span>
+                                </a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                    <!-- <div class="lista-links">
+                        <ul class="infoFoot">
+                            <h4>Links rápidos</h4>
+
+                            <li>
+                                <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+                                    <span>Quienes somos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="tel:+353894553685">
+                                    <span>Quienes somos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer"
+                                    href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!"
+                                    target="_blank">
+                                    <i class=" bi bi bi-whatsapp"></i><span>What's App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="https://www.instagram.com/go4it" target="_blank">
+                                    <i class=" bi bi-instagram"></i><span>Go4it!</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="#">
+                                    <i class=" bi bi-geo-alt "></i><span>Limerick, Irlanda</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div> -->
+                    <div class="lista-links">
+                        <ul class="infoFoot">
+                            <h4>Ciudades</h4>
+
+
+                            <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Limerick
+
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Dublin
+
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a href="#sectionEscuelas"
+                                    class="enlace-scroll">Cork
+                                </a>
+                            </li>
+                            <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
+                                    href="#sectionEscuelas" class="enlace-scroll">Drogheda
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- <div class="lista-links">
+                        <ul class="infoFoot">
+                            <a href="https://goo.gl/maps/1Ux2Cj64CXDDs4D36" target="_blank">
+                                <h4>
+                                    Limerick, Irlanda
+                                    <i class=" bi bi-geo-alt "></i>
+                                </h4>
+                            </a>
+                            <li>
+                                <a class="link-footer" href="#">
+
+                                    <div id="mapa" style=" height: 150px;"></div>
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div> -->
+                    <div class="lista-links">
+                        <ul class="infoFoot">
+                            <li>
+                                <img style=" height: 150px; " src="../img/logo Go 4 it original imagotipo.png" alt="">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <a class="float-w" href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20inglés!"
+                target="_blank">
+                <i class="bi bi-whatsapp my-float"></i>
+            </a>
+        </footer>
+
+
+
+
+
+    </main>
+
+
+    <!-- <script src="./splide-4.1.3/dist/js/splide.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="../js/splide/splide.js"></script>
+    <script src="../js/splides_go4it.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <script src="../js/escuelas.js"></script>
+    <script src="../js/nav.js"></script>
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+    <script src="../js/api.js"></script>
+
+
+</body>
+
+
+
+</html>
