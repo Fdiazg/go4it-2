@@ -12,7 +12,7 @@ const gridEscuelas = document.querySelector('.lista-escuelas-go4it')
 
 
 cards.forEach(ocultar => {
-    if (ocultar.dataset.ciudad.includes('limerick')) {
+    if (ocultar.dataset.ciudad.includes('dublin')) {
         ocultar.classList.remove('d-none')
 
     } else {
