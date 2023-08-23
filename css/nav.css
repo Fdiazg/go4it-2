@@ -25,6 +25,11 @@
 
 
 /* *Nav */
+
+.logo-nav{
+  display: none;
+}
+
 .header-go4it {
   position: sticky;
   top: 0;
@@ -201,6 +206,7 @@
     width: 30px;
     height: 20px;
     cursor: pointer;
+    z-index: 10;
   }
 
   .hamburger-line {
@@ -230,22 +236,37 @@
 
 
 @media (max-width:768px) {
+
+  .logo-nav{
+    display: block;
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+
+
   .container-nav .nav-go4it {
     display: flex;
     /* position: absolute; */
     position: fixed;
-    top: 52px;
+    /* top: 52px; */
     right: -200px;
     background: #fff;
     transition: right .3s ease;
+    top: 0;
+    height: 100vh;
   }
 
   .container-nav .nav-go4it.nav-open {
     display: flex;
     /* position: absolute; */
-    top: 52px;
+    /* top: 68px; */
     right: 0;
     background: #fff;
+    box-shadow: 0 0 0 2000px rgba(0,0,0,.3);
+    top: 0;
+    height: 100vh;
+
   }
 
 

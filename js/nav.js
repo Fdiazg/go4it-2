@@ -1,14 +1,43 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
-// const dataDestino = document.querySelector(".link-ciudades")
 const navMenu = document.querySelector('.nav-go4it')
 
-hamburgerMenu.addEventListener('click', () => {
-  hamburgerMenu.classList.toggle('active');
-  navMenu.classList.toggle('nav-open')
+let menuOpen = false; // Variable para rastrear si el menú está abierto
+
+document.addEventListener('click', (event) => {
+  const isClickInsideHamburger = hamburgerMenu.contains(event.target);
+  const isClickInsideNavMenu = navMenu.contains(event.target);
+
+  if (!isClickInsideHamburger && !isClickInsideNavMenu && menuOpen) {
+      closeMenu();
+  }
 });
 
-const enlacesScroll = document.querySelectorAll('.enlace-scroll');
+hamburgerMenu.addEventListener('click', (event) => {
+  event.stopPropagation();
+  
+  if (menuOpen) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
 
+function openMenu() {
+  hamburgerMenu.classList.add('active');
+  navMenu.classList.add('nav-open');
+  menuOpen = true;
+}
+
+function closeMenu() {
+  hamburgerMenu.classList.remove('active');
+  navMenu.classList.remove('nav-open');
+  menuOpen = false;
+}
+
+
+
+
+const enlacesScroll = document.querySelectorAll('.enlace-scroll');
 
 enlacesScroll.forEach(enlace => {
   enlace.addEventListener('click', function (event) {
@@ -27,9 +56,6 @@ enlacesScroll.forEach(enlace => {
     });
   });
 });
-
-
-
 
 
 

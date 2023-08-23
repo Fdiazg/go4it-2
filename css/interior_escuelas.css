@@ -1,11 +1,11 @@
-.section-banner-escuelas-go4it{
-        display: flex;
-        padding: 1.5rem 0;
-        flex-direction: row;
+.section-banner-escuelas-go4it {
+    display: flex;
+    padding: 1.5rem 0;
+    flex-direction: row;
 }
 
 .contenedor-escuelas-go4it {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     /* display: flex; */
     padding: 0px 20px;
@@ -14,7 +14,7 @@
     justify-content: inherit;
 }
 
-.contenedor-img-escuelas{
+.contenedor-img-escuelas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
@@ -23,13 +23,13 @@
 
 }
 
-.section-banner-escuelas-go4it img{
+.section-banner-escuelas-go4it img {
     width: 100%;
     max-width: 500px;
     max-height: 250px;
 }
 
-.bajada-escuelas-go4it{
+.bajada-escuelas-go4it {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -46,57 +46,81 @@
     background: var(--fondo-blanco);
 }
 
-.escuelas-row-go4it{
+.escuelas-row-go4it {
     display: flex;
     flex-direction: column;
 }
 
-.bajada-escuelas-go4it{
+.bajada-escuelas-go4it {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-.texto-escuelas-go4it{
+.texto-escuelas-go4it {
     width: 100%;
 }
 
-.txt-escuelas-go4it-h2{
+.txt-escuelas-go4it-h2 {
     font-weight: 500;
     line-height: 36px;
     font-size: 24px;
     padding: 1rem;
 }
 
-.info-clases-go4it{
-    display: flex;
+.info-clases-go4it {
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-.mapa-escuelas{
+#mapa-rightword {
+    height: 250px;
+    max-height: 240px;
+    /* width: 500px;
+    max-width: 500px; */
+}
+
+.mapa-escuelas {
     z-index: 1;
     border: 1px solid #000;
 }
 
 .horario-escuelas {
-    border: 1px solid var(--primario-color-celeste);
+    /* border: 1px solid var(--primario-color-celeste); */
     border-radius: 5px;
-    position: relative; /* Importante para alinear el pseudo-elemento */
+    position: relative;
+    background: var(--fondo-1);
+    box-shadow: 0px 2px 8px rgba(1, 0, 0, .3);
+
 }
 
 .horario-escuelas span {
     display: block;
     padding: .725rem 2.5rem;
-    border-bottom: 1px solid var(--primario-color-celeste);
+    /* border-bottom: 1px solid var(--primario-color-celeste); */
+    background: var(--fondo-gris);
+    color: #fff;
 
 }
 
-.card-escuelas{
+.card-escuelas {
     margin-top: 1rem;
 }
-.card-escuelas p:nth-child(2n){
+
+.card-escuelas p {
+    margin-bottom: 0.5rem;
+
+}
+
+.card-escuelas p:nth-child(2n) {
     margin: 0rem;
 }
 
@@ -107,3 +131,120 @@
     right: 0;
     bottom: 0;
 } */
+
+
+
+@media (max-width:769px) {
+
+    /* .video-escuelas iFrame{
+        max-width: 394px;
+        max-height: 224px;
+    } */
+    .info-clases-go4it {
+        gap: 1rem;
+        /* display: flex; */
+        display: grid;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .video-escuelas iframe {
+        width: -webkit-fill-available;
+    }
+
+    #mapa-rightword {
+        height: 250px;
+        max-height: 240px;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .bajada-escuelas-go4it {
+        flex-direction: column;
+
+    }
+}
+
+/* @media (max-width: 660px) {
+    .info-clases-go4it {
+        gap: 1rem;
+        display: grid;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+ */
+
+
+@media (max-width: 426px) {
+    /* .info-clases-go4it {
+        gap: 1rem;
+        display: grid;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        grid-template-columns: repeat(1,1fr);
+    } */
+
+    .contenedor-escuelas-go4it {
+        max-width: 420px;
+    }
+
+    .contenedor-img-escuelas {
+        overflow: scroll;
+        gap: 0.75rem;
+
+    }
+
+
+
+
+    .contenedor-img-escuelas img:nth-child(1) {
+        order: 2;
+    }
+
+    .contenedor-img-escuelas img:nth-child(2) {
+        order: 3;
+    }
+
+    .contenedor-img-escuelas img:nth-child(3) {
+        order: 1;
+    }
+
+    .section-banner-escuelas-go4it img {
+        width: auto;
+        max-height: 250px;
+    }
+
+
+    .txt-escuelas-go4it-h2 {
+        line-height: 28px;
+        font-size: 22px;
+        padding: 0 0 1rem 0;
+    }
+
+
+    .video-escuelas iframe {
+        max-height: 250px;
+    }
+}
+
+
+@media (max-width: 376px) {
+
+    #mapa-rightword {
+
+        max-width: 300px;
+    }
+}

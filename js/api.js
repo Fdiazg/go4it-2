@@ -62,7 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //TODO mapa rightword
 
-const mapaRightword = L.map('mapa-rightword').setView([52.6593398, -8.6317434], 15); // Latitud, Longitud, y nivel de zoom
+const validacionRightword = document.querySelector('#mapa-rightword')
+if(validacionRightword){
+    const mapaRightword = L.map('mapa-rightword').setView([52.6593398, -8.6317434], 15); // Latitud, Longitud, y nivel de zoom
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -71,3 +73,5 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([52.6593398, -8.6317434]).addTo(mapaRightword)
     .bindPopup('Rightword')
     .openPopup();
+}
+
