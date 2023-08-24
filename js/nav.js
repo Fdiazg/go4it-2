@@ -63,12 +63,13 @@ enlacesScroll.forEach(enlace => {
 document.addEventListener("DOMContentLoaded", function () {
 
   const enlacesIrlanda = document.querySelectorAll(".sub-menu-link");
+  const flechaDerecha = document.querySelector('.flecha-derecha-nav')
 
   enlacesIrlanda.forEach(function (enlace) {
     enlace.addEventListener("click", function (e) {
       e.preventDefault();
       let contenedorPais = this.nextElementSibling;
-
+      flechaDerecha.classList.toggle('arrow-active')
       contenedorPais.classList.toggle("active");
     });
   });

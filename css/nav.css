@@ -143,6 +143,8 @@
   color: #000;
 }
 
+
+
 /* Estilos para los submenús secundarios */
 .sub-sub-menu {
   display: none;
@@ -230,6 +232,15 @@
 
   .hamburger-menu.active .hamburger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .flecha-derecha-nav{
+    transition: all .3s ease;
+  
+  }
+  
+  .flecha-derecha-nav.arrow-active{
+    transform: rotate(90deg);
   }
 }
 

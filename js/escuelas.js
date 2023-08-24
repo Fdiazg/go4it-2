@@ -73,6 +73,10 @@ function toggleCiudad(e) {
     });
 
     tituloEscuelas.textContent = `${ciudad.charAt(0).toUpperCase() + ciudad.slice(1)}`;
+    console.log(tituloEscuelas.textContent)
+    if(tituloEscuelas.textContent === 'Dublin'){
+        tituloEscuelas.textContent = 'Dublín'
+    }
 }
 
 
