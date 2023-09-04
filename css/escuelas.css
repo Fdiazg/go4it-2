@@ -68,7 +68,7 @@
 
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   padding: 1rem 0;
 
@@ -237,7 +237,7 @@
 
   .lista-escuelas-go4it {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     overflow-y: scroll;
   }
 

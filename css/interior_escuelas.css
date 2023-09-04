@@ -15,7 +15,7 @@
 }
 
 .contenedor-escuelas-go4it h3{
-    background: var(--lighter-primario-color-verde);
+    /* background: var(--lighter-primario-color-verde); */
     padding: 0.25rem;
     margin: 0;
 }

@@ -26,26 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// function initMap() {
-//     // Crea un objeto de mapa y configura las opciones
-//     var mapOptions = {
-//         center: { lat: 52.6646, lng: -8.6234 }, // Coordenadas de Limerick
-//         zoom: 12, // Nivel de zoom
-//     };
-//     var map = new google.maps.Map(document.getElementById('mapa-footer'), mapOptions);
-
-//     // Crea un marcador en la localidad de Limerick
-//     var markerOptions = {
-//         position: { lat: 52.6646, lng: -8.6234 }, // Coordenadas de Limerick
-//         map: map,
-//         title: 'Limerick'
-//     };
-//     var marker = new google.maps.Marker(markerOptions);
-// }
-
-
-
 // TODO API MAPA
 
 
@@ -71,8 +51,7 @@ if (validacionRightword) {
     }).addTo(mapaRightword);
 
     L.marker([52.6593398, -8.6317434]).addTo(mapaRightword)
-        .bindPopup('Rightword')
-        .openPopup();
+
 }
 
 //TODO MAPA ELI DUBLIN
@@ -93,8 +72,6 @@ if (eliDublinGrandCanal) {
     }).addTo(mapaEliDublinGrandCanal);
 
     L.marker([lat, lon]).addTo(mapaEliDublinGrandCanal)
-        .bindPopup('Eli, Grand Canal')
-        .openPopup();
 
 }
 
@@ -109,8 +86,7 @@ if (eliDublinDameStreet) {
     }).addTo(mapaEliDublinGrandDameStreet);
 
     L.marker([lat, lon]).addTo(mapaEliDublinGrandDameStreet)
-        .bindPopup('Eli, Dame Street')
-        .openPopup();
+
 
 }
 
@@ -125,8 +101,6 @@ if (eliLimerick) {
     }).addTo(mapaEliLimerick);
 
     L.marker([lat, lon]).addTo(mapaEliLimerick)
-        .bindPopup(`Eli, O'Connell`)
-        .openPopup();
 
 }
 
@@ -142,8 +116,7 @@ if (eliDrogheda) {
     }).addTo(mapaEliDrogheda);
 
     L.marker([lat, lon]).addTo(mapaEliDrogheda)
-        .bindPopup('Eli, Merchant House')
-        .openPopup();
+
 
 }
 
@@ -163,8 +136,7 @@ if (englishour) {
     }).addTo(mapaEnglishour);
 
     L.marker([lat, lon]).addTo(mapaEnglishour)
-        .bindPopup('Englishour')
-        .openPopup();
+
 
 }
 
@@ -184,7 +156,26 @@ if (studentcampus) {
     }).addTo(mapaStudentcampus);
 
     L.marker([lat, lon]).addTo(mapaStudentcampus)
-        .bindPopup('Student Campus')
-        .openPopup();
+
+
+}
+
+
+//TODO Mapa studentcampus
+
+const icotCork = document.querySelector('#mapa-icot-cork')
+
+if (icotCork) {
+    const lat = 51.895214;
+    const lon = -8.4760912;
+    const zoomLevel = 15;
+    const mapaIcotCork = L.map(icotCork).setView([lat, lon], zoomLevel);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mapaIcotCork);
+
+    L.marker([lat, lon]).addTo(mapaIcotCork)
+
 
 }
