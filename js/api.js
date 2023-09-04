@@ -161,7 +161,7 @@ if (studentcampus) {
 }
 
 
-//TODO Mapa Icot-cork
+//TODO Mapa Icot-cork-
 
 const icotCork = document.querySelector('#mapa-icot-cork')
 
