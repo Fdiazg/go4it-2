@@ -122,8 +122,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    border-radius: 3px;
-
+    /* border-radius: 3px; */
+    border-radius: 100px;
     border: none;
     color: #fff;
     background-color: rgb(88, 101, 242);
@@ -133,7 +133,8 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-go4it:hover {
     transition: .2s all ease;
     background-color: rgb(71, 82, 196);
-    border-radius: 1px;
+    /* border-radius: 1px; */
+    border-radius: 100px;
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
@@ -154,9 +155,9 @@ input[type=number]::-webkit-outer-spin-button {
 
     color: #fff;
     /* border:1px solid var(--morado-gradiant); */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     background-color: var(--primario-color-celeste);
-
+    border-radius: 100px;
 
 }
 
@@ -234,6 +235,8 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
+
 }
 
 .titulo-descarga-go4it h3 {
@@ -248,10 +251,17 @@ input[type=number]::-webkit-outer-spin-button {
     background: var(--primario-color-amarillo);
     gap: 8px;
     /* padding: 4px; */
-    padding: 8px 24px;
+    /* padding: 8px 24px; */
+    padding: 8px 14px;
 
-    border-radius: 5px;
+    /* border-radius: 5px; */
     align-items: center;
+
+    border-radius: 100px;
+    width: 190px;
+    justify-content: center;
+
+
 }
 
 .titulo-descarga-go4it div:hover {
@@ -336,7 +346,9 @@ input[type=number]::-webkit-outer-spin-button {
 .porque-go4it {
     padding: 1.5rem 0;
     /* background: var(--color-3-opacity-1); */
-    background: var(--fondo-1);
+     background: var(--fondo-1); 
+   /* background: var(--darker-primario-color-celeste-claro);*/
+
 
 }
 
@@ -394,7 +406,9 @@ input[type=number]::-webkit-outer-spin-button {
 /* ? Nosotros */
 .contenedor-nosotros-go4it {
     padding: 1.5rem 0;
-    background: var(--fondo-1);
+    background: var(--fondo-1); 
+    
+   /*  background: var(--darker-primario-color-celeste);*/
 }
 
 .imagenes-nosotros-go4it {
@@ -765,6 +779,11 @@ input[type=number]::-webkit-outer-spin-button {
     .imagen-nosotros {
         max-width: 200px;
     }
+
+    .titulo-descarga-go4it h3 {
+        display: none;
+    }
+    
 }
 
 
@@ -869,4 +888,33 @@ input[type=number]::-webkit-outer-spin-button {
     .imagenes-nosotros-go4it {
         overflow-y: scroll;
     }
+}
+
+
+
+.contenedor-referencias-go4it {
+    padding: 1.5rem 0;
+    background: var(--darker-primario-color-celeste-claro)
+}
+
+
+.testimony-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem ;
+    gap: 1rem;
+}
+
+.testimony-text{
+    margin-bottom: 1rem;
+    color: #FFF;    
+    font-weight: 300;
+    font-size: 14px;
+
+}
+
+.contenedor-referencias-go4it .txt-go4it-h2 span{
+    color: #FFF;
 }

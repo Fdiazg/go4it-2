@@ -31,3 +31,23 @@
 //         },
 //     }).mount();
 // });
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     new Splide('#card-referencias', {
+//         perPage: 4,
+//         lazyLoad: 'nearby',
+//         gap: 8,
+//         arrows: false,
+//         pagination: false,
+//         breakpoints: {
+//             640: {
+//                 perPage: 1,
+//                 type: "loop",
+//                 arrows: true,
+//                 pagination: true,
+//             },
+//         },
+//     }).mount();
+// });

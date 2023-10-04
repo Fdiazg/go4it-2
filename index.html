@@ -265,9 +265,24 @@
                                         <span class="nombre-ciudad">Drogheda</span>
                                     </div>
                                 </div>
+
+                                <!-- * TEST  -->
+
+
                                 <div class="contenedor-tarjetas">
                                     <div class="titulo-descarga-go4it">
                                         <h3 id="tituloEscuelas" class="text-center">Dublín</h3>
+
+                                        <select name="escuelas" class="select-city" id="selectCity">
+                                            <option value="dublin" class="ciudades-go4it clicked" data-ciudad="dublin"
+                                                data-cards="dublin">Dublín</option>
+                                            <option value="limerick" lass="ciudades-go4it " data-ciudad="limerick"
+                                                data-cards="limerick">Limerick</option>
+                                            <option value="cork" class="ciudades-go4it" data-ciudad="cork" data-cards="cork">
+                                                Cork</option>
+                                            <option value="drogheda" class="ciudades-go4it" data-ciudad="drogheda"
+                                                data-cards="drogheda">Drogheda</option>
+                                        </select>
                                         <div>
                                             <a data-doc='dublin' class="" href="./archivos/Brochure_go4it.pdf"
                                                 download>Brochure Dublín</a>
@@ -466,6 +481,41 @@
             </div>
         </section>
 
+        <section class="contenedor-referencias-go4it  text-center splide" id="card-referencias">
+            <h2 class="txt-go4it-h2"> <span class=""> Nuestras referencias </h2>
+
+            <div class="splide__track container-go4it">
+                <ul class="splide__list">
+                    <!-- <li class="splide__slide">
+                        <img src="./img/concepcion.jpg" alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div>
+                            Esta es una reseña de algo, ejemplo de ejemplo de ejemplo de super ejemplo ejemplar 01
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="./img/santiago.jpg" alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div>
+                            Esta es una reseña de algo, ejemplo de ejemplo de ejemplo de super ejemplo ejemplar 02
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/santiago.jpg" alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div>
+                            Esta es una reseña de algo, ejemplo de ejemplo de ejemplo de super ejemplo ejemplar 03
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/santiago.jpg" alt="" width="150px" height="150px" style="border-radius: 50%;">
+                        <div>
+                            Esta es una reseña de algo, ejemplo de ejemplo de ejemplo de super ejemplo ejemplar 04
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+
+
 
         <section class="infoContacto " id="formInfo">
             <div class="container-go4it">
@@ -659,11 +709,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
+        <script src="./js/testimony.js"></script>
+
     <script src="./js/splide/splide.js"></script>
     <script src="./js/splides_go4it.js"></script>
     <!-- <script src="./js/app.js"></script> -->
     <script src="./js/escuelas.js"></script>
     <script src="./js/nav.js"></script>
+
     <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
