@@ -783,6 +783,12 @@ input[type=number]::-webkit-outer-spin-button {
     .titulo-descarga-go4it h3 {
         display: none;
     }
+
+    .infoContacto {
+        padding: 3rem 0;
+        text-align: center;
+    
+    }
     
 }
 
