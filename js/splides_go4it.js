@@ -51,3 +51,19 @@
 //         },
 //     }).mount();
 // });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#banner-go4it', {
+        lazyLoad: 'nearby',
+        type: 'loop',
+        autoplay: 'play',
+        arrows: true,
+        pagination: true,
+        breakpoints: {
+            768: {
+                height: "15rem"
+            }
+        },
+    }).mount();
+});
