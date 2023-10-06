@@ -192,7 +192,7 @@
 
 } */
 
-.select-city{
+.select-city {
   display: none;
 }
 
@@ -277,13 +277,13 @@
     display: none;
   }
 
-  .select-city{
+  .select-city {
     display: block;
     width: 100%;
     /* border: 2px solid var(--primario-color-celeste); */
     /* border-radius: 10px; */
     padding: 8px;
-    background:var(--fondo-1);
+    background: var(--fondo-1);
 
 
     border: none;
@@ -342,4 +342,31 @@
 
 
 
+}
+
+
+.tarjetas-splide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#splide-ciudades {
+  text-align: center;
+}
+
+.track-ciudad {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .list-ciudad {
+    display: flex !important;
+    gap: 2rem;
+    justify-content: center;
+
+  }
 }

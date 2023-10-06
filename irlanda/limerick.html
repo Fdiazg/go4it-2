@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go4it!</title>
+    <!-- <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <link rel="shortcut icon" href="../img/Logo2.ico">
+    <link rel="stylesheet" href="../css/variables/colores.css">
+    <link rel="stylesheet" href="../css/variables/transiciones.css">
+    <link rel="stylesheet" href="../js/splide/splide.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/rrss.css">
+    <link rel="stylesheet" href="../css/escuelas.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header class="container-fluid-no header-go4it " id="inicio">
+        <div class="container-go4it">
+            <div class="container-nav" id="container-nav">
+
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo Go 4 it original tipo.png" alt="Logo" class="user-block__logo">
+                    </a>
+
+                </div>
+
+                <div class="hamburger-menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+
+                <nav class="nav-go4it">
+                    <ul class="main-menu">
+                        <li class="main-menu-item">
+                            <a class="main-menu-link link-activo" href="#">Inicio</a>
+                        </li>
+
+                        <li class="main-menu-item">
+                            <span class="main-menu-link">Cursos de inglés
+                                <img src="../svg/arrow_bottom.svg" alt="felcha-abajo">
+                            </span>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item">
+                                    <span class="sub-menu-link" href="#">Irlanda
+                                        <img class="flecha-derecha-nav" src="../svg/arrow_right.svg"
+                                            alt="flecha-derecha">
+                                    </span>
+                                    <div class="contenedor-pais">
+
+                                        <ul class="sub-sub-menu">
+                                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin"><a
+                                                    href="./dublin.html">Dublín
+
+                                                </a>
+                                            </li>
+
+                                            <li class="link-ciudades" data-ciudad="limerick" data-cards="limerick"><a
+                                                    href="#">Limerick
+
+                                                </a></li>
+
+                                            <li class="link-ciudades" data-ciudad="cork" data-cards="cork"><a
+                                                    href="./cork.html">Cork
+                                                </a></li>
+                                            <li class="link-ciudades" data-ciudad="drogheda" data-cards="drogheda"><a
+                                                    href="./drogheda.html">Drogheda
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- <li class="sub-menu-item">
+                                    <a class="sub-menu-link" href="#">Australia
+                                        <img src="./svg/arrow_right.svg" alt="">
+                                    </a>
+                                                                        <div class="contenedor-pais">
+
+                                    <ul class="sub-sub-menu">
+                                        <li class="link-ciudades" data-destino="sidney">
+                                            <a href="#sectionEscuelas">Sidney</a>
+                                        </li>
+                                        <li class="link-ciudades" data-destino="adelaida">
+                                            <a href="#sectionEscuelas">Adelaida</a>
+                                        </li>
+                                    </ul>
+                                                                        </div>
+
+                                </li> -->
+                            </ul>
+
+
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#">WH</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a class="main-menu-link" href="#formInfo">Contácto</a>
+                        </li>
+                        <li class="logo-nav">
+                            <img style=" height: 150px; " src="../img/logo Go 4 it original imagotipo.png" alt="">
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ?RRSS* -->
+
+    <div class="social">
+        <a href="https://instagram.com/go4it.agency">
+            <div class="social-btn color-instagram">
+                <i class="bi bi-instagram"></i>
+            </div>
+        </a>
+        <a href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20ingles!" target="_blank">
+            <div class="social-btn color-whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </a>
+        <a href="tel:+353894553685">
+            <div class="social-btn color-phone">
+                <i class="bi bi-telephone"></i>
+            </div>
+        </a>
+        <a href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+            <div class="social-btn color-correo">
+                <i class="bi bi-envelope"></i>
+            </div>
+        </a>
+    </div>
+
+
+
+    <main>
+
+
+
+
+
+        <!-- <section class="contenedor-escuelas-go4it" id="sectionEscuelas">
+            <div class="container-go4it text-center">
+                <div class="nuestras-escuelas-go4it">
+                    <div class="escuelas-go4it">
+                        <section id="seccion-escuelas" aria-label="Beautiful Images">
+                            <div class="contenedor-seccion-escuelas">
+                                <div class="contenedor-tarjetas">
+                                    <div class="titulo-descarga-go4it txt-go4it-escuelas">
+                                        <h3 class="txt-go4it-h2 ">
+                                            <span class="">Escuelas en Limerick</span>
+                                        </h3>
+
+                                        <div>
+                                            <a data-doc='dublin' class="" href="../archivos/Brochure_go4it.pdf"
+                                                download>Brochure</a>
+
+                                            <img src="../svg/descarga.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <section>
+                                    <div class="carrusel-cards">
+                                        <ul class="lista-escuelas-go4it lista-escuelas-ciudad">
+                                            <li class="card-ciudad-go4it" data-ciudad="limerick">
+                                                <div class="tarjetas-escuelas">
+                                                    <div class="escuelas">
+
+                                                        <img class="card-img-top" src="../img/rightWord.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">
+                                                                Rightword es una destacada y moderna escuela de
+                                                                inglés.
+                                                            </p>
+                                                            <p class="card-text text-center"> Ubicada en la
+                                                                calle
+                                                                The Crescent Street, el corazón de la
+                                                                vibrante ciudad de Limerick, con una distancia
+                                                                caminable a las
+                                                                atraccións de la tercera ciudad más grande de
+                                                                Irlanda.
+                                                            </p>
+
+                                                            <a href="../escuelas/rightword.html"
+                                                                class="btn-escuela-go4it">Conocer más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="card-ciudad-go4it" data-ciudad="limerick">
+                                                <div class="tarjetas-escuelas">
+                                                    <div class="escuelas">
+
+                                                        <img class="card-img-top" src="../img/studentCampus-removebg.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+                                                            <p class="card-text text-center">
+                                                                Student campus es una escuela de ingles ubicada
+                                                                en
+                                                                el centro de
+                                                                la ciudad de Limerick.
+                                                            </p>
+                                                            <p class="card-text text-center"> Esta escuela se
+                                                                encuentra justo en el corazón de la ciudad,
+                                                                rodeada de tiendas, restaurantes, principales
+                                                                paradas de bus y
+                                                                supermercados.
+                                                            </p>
+
+                                                            <a href="../escuelas/studentcampus.html"
+                                                                class="btn-escuela-go4it">Conocer más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="card-ciudad-go4it" data-ciudad="limerick dublin drogheda">
+                                                <div class="tarjetas-escuelas">
+                                                    <div class="escuelas">
+
+                                                        <img class="card-img-top"
+                                                            src="../img/cropped-English-Language-Institute.png"
+                                                            alt="Card image cap">
+                                                        <div class="card-body-go4it">
+
+                                                            <p class="card-text text-center">
+                                                                Fundada en 2017, ELI Schools es una empresa
+                                                                líder en
+                                                                formación del inglés con tres escuelas abiertas
+                                                                durante todo el año en Irlanda.
+                                                            </p>
+                                                            <p class="card-text text-center">
+                                                                Nominada en 2001 por colegas y socios de la
+                                                                industria
+                                                                entre las mejores nuevas escuelas de inglés en
+                                                                Europa.
+                                                            </p>
+
+
+                                                            <a href="../escuelas/elischool.html"
+                                                                class="btn-escuela-go4it">Conocer más</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <section id="seccion-escuelas" aria-label="Beautiful Images" class="contenedor-escuelas-go4it">
+            <div class="contenedor-seccion-escuelas">
+                <div class="contenedor-tarjetas tarjetas-splide">
+                    <div class="titulo-descarga-go4it txt-go4it-escuelas">
+                        <h3 class="txt-go4it-h2 ">
+                            <span class="">Escuelas en Limerick</span>
+                        </h3>
+
+                        <div>
+                            <a data-doc='dublin' class="" href="../archivos/Brochure_go4it.pdf" download>Brochure</a>
+                            <img src="../svg/descarga.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="carrusel-cards">
+                        <div id="splide-ciudades-limerick" class="splide">
+                            <div class="splide__track track-ciudad">
+                                <ul class="splide__list list-ciudad">
+
+
+                                    <li class="splide__slide card-ciudad-go4it" data-ciudad="limerick">
+
+                                        <div class="tarjetas-escuelas">
+                                            <div class="escuelas">
+
+                                                <img class="card-img-top" src="../img/rightWord.png"
+                                                    alt="Card image cap">
+                                                <div class="card-body-go4it">
+                                                    <p class="card-text text-center">
+                                                        Rightword es una destacada y moderna escuela de
+                                                        inglés.
+                                                    </p>
+                                                    <p class="card-text text-center"> Ubicada en la
+                                                        calle
+                                                        The Crescent Street, el corazón de la
+                                                        vibrante ciudad de Limerick, con una distancia
+                                                        caminable a las
+                                                        atraccións de la tercera ciudad más grande de
+                                                        Irlanda.
+                                                    </p>
+
+                                                    <a href="../escuelas/rightword.html"
+                                                        class="btn-escuela-go4it">Conocer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="splide__slide card-ciudad-go4it" data-ciudad="limerick dublin drogheda">
+                                        <div class="tarjetas-escuelas">
+                                            <div class="escuelas">
+
+                                                <img class="card-img-top" src="../img/studentCampus-removebg.png"
+                                                    alt="Card image cap">
+                                                <div class="card-body-go4it">
+                                                    <p class="card-text text-center">
+                                                        Student campus es una escuela de ingles ubicada
+                                                        en
+                                                        el centro de
+                                                        la ciudad de Limerick.
+                                                    </p>
+                                                    <p class="card-text text-center"> Esta escuela se
+                                                        encuentra justo en el corazón de la ciudad,
+                                                        rodeada de tiendas, restaurantes, principales
+                                                        paradas de bus y
+                                                        supermercados.
+                                                    </p>
+
+                                                    <a href="../escuelas/studentcampus.html"
+                                                        class="btn-escuela-go4it">Conocer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide card-ciudad-go4it" data-ciudad="dublin">
+                                        <div class="tarjetas-escuelas">
+                                            <div class="escuelas">
+
+                                                <img class="card-img-top"
+                                                    src="../img/cropped-English-Language-Institute.png"
+                                                    alt="Card image cap">
+                                                <div class="card-body-go4it">
+
+                                                    <p class="card-text text-center">
+                                                        Fundada en 2017, ELI Schools es una empresa
+                                                        líder en
+                                                        formación del inglés con tres escuelas abiertas
+                                                        durante todo el año en Irlanda.
+                                                    </p>
+                                                    <p class="card-text text-center">
+                                                        Nominada en 2001 por colegas y socios de la
+                                                        industria
+                                                        entre las mejores nuevas escuelas de inglés en
+                                                        Europa.
+                                                    </p>
+
+
+                                                    <a href="../escuelas/elischool.html"
+                                                        class="btn-escuela-go4it">Conocer más</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="section-banner-go4it splide" id="banner-go4it">
+            <div class="splide__slider">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="img-banner" src="../img/banner/1920inglaterra.webp" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="img-banner" src="../img/banner/agenda-llamada-1920.webp" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img class="img-banner" src="../img/banner/bg-oct-1.webp" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section class="infoContacto " id="formInfo">
+            <div class="container-go4it">
+                <form id="form" class="formInfo" method="post" action="https://formspree.io/f/xayzbqra">
+                    <h3 class="txt-go4it-h3">Contáctanos</h3>
+                    <div class="nombre form-group-go4it">
+                        <input class="form-control-go4it" type="text" id="nombre" name="nombre" minlength="5"
+                            maxlength="50" placeholder="Nombre completo" required>
+                        <label class="form-labe-go4itl" for="nombre">Nombre completo</label>
+
+                    </div>
+                    <div class=" correo form-group-go4it">
+                        <input type="email" class="form-control-go4it" id="email" name="email"
+                            placeholder="Correo: nombre@ejemplo.com" required
+                            pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$">
+                        <label for="correo" class="form-label-go4it">Correo: nombre@ejemplo.com</label>
+
+                    </div>
+                    <div class="telefono form-group-go4it">
+                        <input class="form-control-go4it" type="number" id="telefono" name="telefono"
+                            placeholder="Teléfono" required>
+                        <label class="form-labe-go4itl" for="telefono">Teléfono</label>
+                    </div>
+                    <div class="pais form-group-go4it">
+                        <!-- <label for="pais" class=" form-label-go4it">País</label> -->
+
+                        <select class="form-select-go4it" name="pais" id="pais" required>
+                        </select>
+
+                    </div>
+                    <div class="form-group-go4it">
+                        <textarea class="form-control-go4it" id="mensaje" rows="5" name="mensaje"
+                            placeholder="Su mensaje con sus consultas"></textarea>
+                        <label class="form-label-go4it" for="mensaje">Su mensaje con sus consultas</label>
+
+                    </div>
+                    <button type="submit" class="btn-go4it btn-principal">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer id="footer" class="contenedor-footer-go4it">
+            <div class="container-go4it">
+                <div class="footer-info">
+                    <div class="rrss-footer">
+                        <ul>
+                            <li class="rrss-marca">
+                                <a href="#">
+                                    Go4it!
+                                </a>
+
+                            </li>
+                        </ul>
+                        <ul class="rrss-footer-d">
+                            <li>
+                                <a class="link-footer" href="#inicio" target="_blank">
+                                    <i class=" bi bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="https://www.instagram.com/go4it.agency" target="_blank">
+                                    <i class=" bi bi-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lista-links">
+                        <ul class="infoFoot">
+                            <li class="link-ciudades" data-ciudad="dublin" data-cards="dublin">
+                                <a class="enlace-scroll link-footer" href="#sectionEscuelas">
+                                    <span>Escuelas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="#formInfo">
+                                    <span>Contacto</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="./quienes-somos">
+                                    <span>Nuestro equipo</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="rrss-footer">
+
+                            <li>
+                                <a class="link-footer" href="mailto:info@go4it.cl?Subject=Dudas%20sobre%20cursos">
+                                    <span>info@go4it.cl</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer-separador">
+                                    <span>|</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link-footer" href="tel:+353894553685">
+                                    <span>+353894553685</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="rrss-footer rrss-footer-m">
+                            <ul>
+                                <li>
+                                    <a class="link-footer"
+                                        href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20inglés!"
+                                        target="_blank">
+                                        <i class=" bi bi bi-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer" href="https://www.instagram.com/go4it.agency"
+                                        target="_blank">
+                                        <i class=" bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <a class="float-w"
+                    href="https://wa.me/353894553685?text=Estoy%20interesado%20en%20cursos%20de%20inglés!"
+                    target="_blank">
+                    <i class="bi bi-whatsapp my-float"></i>
+                </a>
+            </div>
+        </footer>
+
+
+
+
+
+    </main>
+
+
+    <!-- <script src="./splide-4.1.3/dist/js/splide.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <script src="../js/splide/splide.js"></script>
+    <script src="../js/splides_go4it.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+    <!-- <script src="../js/escuelas.js"></script> -->
+    <script src="../js/nav.js"></script>
+
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+    <script src="../js/api.js"></script>
+
+
+</body>
+
+
+
+</html>

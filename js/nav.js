@@ -91,3 +91,17 @@ window.onscroll = () => {
     iconoWsp.style.opacity = "1"
   }
 };
+
+// const linkInicioEscuela = document.querySelector(".link-escuela-inicio")
+
+// linkInicioEscuela.addEventListener("click", function (event) {
+//   event.preventDefault(); 
+
+//   const escuelaSection = document.querySelector("#sectionEscuela");
+//   const escuelaSectionPosition = escuelaSection.offsetTop;
+
+//   window.scrollTo({
+//       top: escuelaSectionPosition,
+//       behavior: "smooth"
+//   });
+// });

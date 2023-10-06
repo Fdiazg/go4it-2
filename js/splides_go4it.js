@@ -216,3 +216,109 @@ if (imgCarruselIcot) {
         }).mount();
     });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide-ciudades-dublin', {
+        perPage: 2,
+        gap: 10,
+        pagination: false,
+        arrows: false,
+        padding: "1rem",
+        
+
+        breakpoints: {
+            1024: {
+                destroy: false,
+                perPage: 2,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            },
+            768: {
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            }
+        }
+    }).mount();
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide-ciudades-limerick', {
+        perPage: 3,
+        gap: 10,
+        pagination: false,
+        arrows: false,
+        padding: "1rem",
+        breakpoints: {
+            1024: {
+                destroy: false,
+                perPage: 3,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            },
+            768: {
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            }
+        }
+    }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide-ciudades-cork', {
+
+        destroy: true,
+        breakpoints: {
+            1024: {
+                focus: "center",
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            },
+            768: {
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            }
+        }
+    }).mount();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#splide-ciudades-drogheda', {
+
+        destroy: true,
+        breakpoints: {
+            1024: {
+                focus: "center",
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            },
+            768: {
+                destroy: false,
+                perPage: 1,
+                gap: 10,
+                pagination: false,
+                arrows: false,
+            }
+        }
+    }).mount();
+});
