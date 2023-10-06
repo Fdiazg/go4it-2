@@ -76,3 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+const iconoWsp = document.querySelector(".float-w")
+window.onscroll = () => {
+  let scrollY = window.scrollY;
+  let visible = document.documentElement.clientHeight;
+  let pageHeight = document.documentElement.scrollHeight;
+  let tolerance = 5; 
+
+  if (scrollY + visible + tolerance >= pageHeight) {
+    iconoWsp.style.opacity = "0"
+    iconoWsp.style.transition = "opacity .2s ease"
+  } else{
+    iconoWsp.style.opacity = "1"
+  }
+};

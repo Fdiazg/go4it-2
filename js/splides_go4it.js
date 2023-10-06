@@ -67,3 +67,152 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     }).mount();
 });
+
+// ? Eli
+const imgCarruselEli = document.querySelector("#image-carousel-eli")
+if (imgCarruselEli) {
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel-eli', {
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                    arrows: true,
+                    pagination: true,
+                    perMove: 1,
+                    gap: 4,
+                    autoplay: 'play',
+                    type: 'loop',
+
+                },
+                426: {
+                    perPage: 1,
+                    arrows: true,
+                    pagination: true,
+                    gap: 0,
+                }
+            },
+
+        }).mount();
+    });
+}
+
+// ? English
+const imgCarruselEng = document.querySelector("#image-carousel-eng")
+if (imgCarruselEng) {
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel-eng', {
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                    arrows: true,
+                    pagination: true,
+                    perMove: 1,
+                    gap: 4,
+                    autoplay: 'play',
+                    type: 'loop',
+                },
+                426: {
+                    perPage: 1,
+                    arrows: true,
+                    pagination: true,
+                    gap: 0,
+                }
+            },
+
+        }).mount();
+    });
+}
+// ? Rightword
+const imgCarruselRight = document.querySelector("#image-carousel-right")
+if (imgCarruselRight) {
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel-right', {
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                    arrows: true,
+                    pagination: true,
+                    perMove: 1,
+                    gap: 4,
+                    autoplay: 'play',
+                    type: 'loop',
+                },
+                426: {
+                    perPage: 1,
+                    arrows: true,
+                    pagination: true,
+                    gap: 0,
+                }
+            },
+
+        }).mount();
+    });
+}
+// ? student
+const imgCarruselStudent = document.querySelector("#image-carousel-student")
+if (imgCarruselStudent) {
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel-student', {
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                    arrows: true,
+                    pagination: true,
+                    perMove: 1,
+                    gap: 4,
+                    autoplay: 'play',
+                    type: 'loop',
+                },
+                426: {
+                    perPage: 1,
+                    arrows: true,
+                    pagination: true,
+                    gap: 0,
+                }
+            },
+
+        }).mount();
+    });
+}
+// ? icot
+const imgCarruselIcot = document.querySelector("#image-carousel-icot")
+if (imgCarruselIcot) {
+    document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#image-carousel-icot', {
+            perPage: 3,
+            arrows: false,
+            pagination: false,
+            breakpoints: {
+                768: {
+                    perPage: 2,
+                    arrows: true,
+                    pagination: true,
+                    perMove: 1,
+                    gap: 4,
+                    autoplay: 'play',
+                    type: 'loop',
+                },
+                426: {
+                    perPage: 1,
+                    arrows: true,
+                    pagination: true,
+                    gap: 0,
+                }
+            },
+
+        }).mount();
+    });
+}

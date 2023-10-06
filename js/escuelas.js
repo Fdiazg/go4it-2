@@ -1,7 +1,6 @@
 
 
 const seleccionarCiudad = document.querySelectorAll('[data-cards]');
-console.log("cards", seleccionarCiudad)
 const cards = document.querySelectorAll('.card-ciudad-go4it');
 const tituloEscuelas = document.querySelector('#tituloEscuelas');
 const ciudadImagen = document.querySelectorAll('.ciudades-go4it');
@@ -28,7 +27,6 @@ selectListCity.addEventListener("change", (e) => {
 
     let selectedCity = selectListCity.value
 
-    console.log(selectedCity)
 
     tituloEscuelas.textContent = `${selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}`
     if (tituloEscuelas.textContent === 'Dublin') {
