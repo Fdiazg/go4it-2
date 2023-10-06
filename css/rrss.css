@@ -80,7 +80,7 @@
       /* top: 450px; */
       /* top: 50%; */
       z-index: 5;
-      top: calc(50% - 70px);
+      top: calc(50% - 10px);
 
     }
   

@@ -99,6 +99,7 @@
     max-height: 240px;
     /* width: 500px;
     max-width: 500px; */
+    width: 100%;
 }
 
 .mapa-escuelas {
@@ -138,6 +139,8 @@
     padding: .725rem 2.5rem;
     background: var(--fondo-gris);
     color: #fff;
+
+    text-wrap: balance;
 
 }
 
