@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Marité",
+        "imageSrc": "./img/agentes/mariteh.webp",
+        "location": "Limerick, Irlanda",
+        "rrss": "Maritehoffmann"
+    },
+    {
+        "name": "Fer",
+        "imageSrc": "./img/agentes/fer.jpg",
+        "location": "Sidney, Australia",
+        "rrss": "Rizosdegitana"
+    },
+    {
+        "name": "Ale",
+        "imageSrc": "./img/agentes/ale.jpg",
+        "location": "Limerick, Irlanda",
+        "rrss": "Escritosdeviaje"
+    }
+
+]

@@ -22,7 +22,9 @@
 
 
 .ciudades-go4it img {
-  max-width: 200px;
+  width: 200px;
+  max-height: 140px;
+  object-fit: cover;
 }
 
 .ciudades-go4it:hover,
@@ -197,12 +199,22 @@
 }
 
 
-@media (max-width:1025px) {
+/* @media (max-width:1025px) {
   .card-ciudad-go4it {
     max-width: 229px;
 
   }
+} */
+
+
+.list-dot-escuela__go4it{
+  padding-left: 2rem !important;
 }
+
+.list-dot-escuela__go4it li {
+  list-style-type: disc;
+}
+
 
 
 

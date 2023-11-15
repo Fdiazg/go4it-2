@@ -939,13 +939,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-.contenedor-referencias-go4it {
+.contenedor-agentes-go4it {
     padding: 1.5rem 0;
     background: var(--darker-primario-color-celeste-claro)
 }
 
 
-.testimony-list{
+.agente-list{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -954,15 +954,27 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 1rem;
 }
 
-.testimony-text{
-    margin-bottom: 1rem;
+.agente-name{
     color: #FFF;    
-    font-weight: 300;
-    font-size: 14px;
+    user-select: text;
 
 }
 
-.contenedor-referencias-go4it .txt-go4it-h2 span{
+.agente-text{
+    margin-bottom: 0;
+    color: #FFF;    
+    font-weight: 300;
+    font-size: 14px;
+    user-select: text;
+
+}
+
+.agente-text i{
+    color: #FFF;    
+
+}
+
+.contenedor-agentes-go4it .txt-go4it-h2 span{
     color: #FFF;
 }
 

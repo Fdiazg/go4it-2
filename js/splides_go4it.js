@@ -78,7 +78,7 @@ if (imgCarruselEli) {
             pagination: false,
             breakpoints: {
                 768: {
-                    perPage: 2,
+                    perPage: 1,
                     arrows: true,
                     pagination: true,
                     perMove: 1,
@@ -107,7 +107,16 @@ if (imgCarruselEng) {
             perPage: 3,
             arrows: false,
             pagination: false,
+            // width: "80%",
+            // focus: "center",
+            // padding: { left: 100},
             breakpoints: {
+                 1440:{
+                    //  width: "100%",
+                    //  perPage: 3,
+                    //  focus: "left"
+                    // padding: { left: 0},
+                 },
                 768: {
                     perPage: 2,
                     arrows: true,
@@ -300,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#splide-ciudades-drogheda', {
+    new Splide('#splide-ciudades-donegal', {
 
         destroy: true,
         breakpoints: {
