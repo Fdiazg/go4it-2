@@ -377,8 +377,8 @@
 @media (min-width: 768px) {
   .list-ciudad {
     display: flex !important;
-    gap: 2rem;
-    justify-content: center;
+    gap: .5rem;
+    /* justify-content: center; */
 
   }
 }
