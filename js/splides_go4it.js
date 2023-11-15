@@ -230,7 +230,7 @@ if (imgCarruselIcot) {
 
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide-ciudades-dublin', {
-        perPage: 2,
+        perPage: 3,
         gap: 10,
         pagination: false,
         arrows: false,

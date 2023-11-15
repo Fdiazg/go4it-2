@@ -1,7 +1,7 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector('.nav-go4it')
 
-let menuOpen = false; // Variable para rastrear si el menú está abierto
+let menuOpen = false;
 
 document.addEventListener('click', (event) => {
   const isClickInsideHamburger = hamburgerMenu.contains(event.target);
