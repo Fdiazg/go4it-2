@@ -1,7 +1,6 @@
 .contenedor-seccion-escuelas {
   display: flex;
   justify-content: flex-start;
-  /* align-items: baseline; */
   gap: 4rem;
   align-items: center;
 }
@@ -49,22 +48,10 @@
 }
 
 
-/* .lista-escuelas-go4it {
-   display: flex;
-  flex-wrap: wrap;
-   justify-content: center;
-  gap: .5rem;
-  height: 100%;
-  justify-content: space-between; 
-  display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
-    gap: 2rem;
-} */
+
 
 .lista-escuelas-go4it {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
+
   gap: 1rem;
 
 
@@ -78,9 +65,6 @@
 
 }
 
-.card-ciudad-go4it {
-  /* width: calc(33.33% - 40px); */
-}
 
 .card-ciudad-go4it {
   max-width: 288px;
@@ -168,7 +152,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 100%;  */
 }
 
 
@@ -188,26 +171,17 @@
   justify-content: space-between;
 }
 
-/* 
-.card-ciudad-go4it{
-  max-width: 288px;
 
-} */
 
 .select-city {
   display: none;
 }
 
 
-/* @media (max-width:1025px) {
-  .card-ciudad-go4it {
-    max-width: 229px;
-
-  }
-} */
 
 
-.list-dot-escuela__go4it{
+
+.list-dot-escuela__go4it {
   padding-left: 2rem !important;
 }
 
@@ -222,19 +196,13 @@
   .contenedor-seccion-escuelas {
 
     gap: 1rem;
-    /* align-items: flex-start; */
-    /* flex-direction: column; */
+
   }
 
-  .contenedor-tarjetas {
 
-
-    /* width: calc(50vw - 20px) */
-  }
 
   .carrusel-cards {
     width: 100%;
-    /* max-width: 530px; */
 
     max-width: calc(71vw - 20px);
 
@@ -242,8 +210,7 @@
 
   .card-ciudad-go4it {
     max-height: unset;
-    /* width: 100%; */
-    /* width: 225px; */
+
     width: 280px;
     padding-left: 10px;
 
@@ -256,7 +223,6 @@
   .lista-escuelas-go4it {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* overflow-y: scroll; */
     overflow-x: scroll;
     padding-right: .5rem;
   }
@@ -270,20 +236,15 @@
 @media (max-width:768px) {
   .contenedor-seccion-escuelas {
     gap: 1rem;
-    /* align-items: flex-start; */
     flex-direction: column;
   }
 
   .carrusel-cards {
     width: 100%;
-    /* max-width: 530px; */
     max-width: calc(94vw - 20px);
   }
 
   .contenedor-ciudades-go4it {
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start; */
 
 
     display: none;
@@ -292,8 +253,7 @@
   .select-city {
     display: block;
     width: 100%;
-    /* border: 2px solid var(--primario-color-celeste); */
-    /* border-radius: 10px; */
+
     padding: 8px;
     background: var(--fondo-1);
 
@@ -323,9 +283,6 @@
 @media (max-width:426px) {
 
   .contenedor-ciudades-go4it {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-
 
     display: none;
   }
@@ -378,11 +335,6 @@
   .list-ciudad {
     display: flex !important;
     gap: .5rem;
-    /* justify-content: center; */
 
   }
 }
-
-
-
-
