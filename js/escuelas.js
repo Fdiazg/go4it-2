@@ -119,7 +119,7 @@ function toggleCiudad(e) {
             card.classList.add('d-none');
         }
 
-        console.log(cantidadDeTarjetas)
+        // console.log(cantidadDeTarjetas)
     });
 
     //Documentos
@@ -133,7 +133,7 @@ function toggleCiudad(e) {
     });
 
     tituloEscuelas.textContent = `${ciudad.charAt(0).toUpperCase() + ciudad.slice(1)}`;
-    console.log(tituloEscuelas.textContent)
+    // console.log(tituloEscuelas.textContent)
     if (tituloEscuelas.textContent === 'Dublin') {
         tituloEscuelas.textContent = 'Dublín'
     }
