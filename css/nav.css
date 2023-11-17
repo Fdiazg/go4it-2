@@ -321,3 +321,29 @@
   }
 
 }
+
+
+.nav-rrss{
+  display: none;
+}
+
+@media (max-width:768px){
+  .nav-rrss{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    /* right: 0; */
+  }
+
+}
+
+.color-nav-wsp{
+  color: #24cc63;
+}
+
+.color-nav-insta{
+  color: #f62782;
+}
+.color-nav-mail{
+  color: #0084c6;
+}
