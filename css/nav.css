@@ -257,7 +257,7 @@
     background: #fff;
     transition: right .3s ease;
     top: 0;
-    height: 100vh;
+    height: 100dvh;
   }
 
   .container-nav .nav-go4it.nav-open {
@@ -332,7 +332,7 @@
     display: block;
     position: absolute;
     bottom: 0;
-    /* right: 0; */
+    margin-bottom: 0.5rem;
   }
 
 }
