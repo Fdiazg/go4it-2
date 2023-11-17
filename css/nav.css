@@ -258,6 +258,7 @@
     transition: right .3s ease;
     top: 0;
     height: 100dvh;
+    -webkit-user-drag: none;
   }
 
   .container-nav .nav-go4it.nav-open {
