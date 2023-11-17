@@ -259,6 +259,8 @@
     top: 0;
     height: 100dvh;
     -webkit-user-drag: none;
+    overscroll-behavior: none;
+
   }
 
   .container-nav .nav-go4it.nav-open {
