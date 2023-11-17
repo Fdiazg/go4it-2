@@ -329,9 +329,13 @@
 
 @media (max-width:768px){
   .nav-rrss{
-    display: block;
+    /* display: block;
     position: absolute;
     bottom: 0;
+    margin-bottom: 0.5rem; */
+    display: block;
+    position: relative;
+    bottom: -320px;
     margin-bottom: 0.5rem;
   }
 
